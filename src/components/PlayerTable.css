@@ -21,6 +21,7 @@
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   min-height: 40px;
+  transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
 .player-cell--name {
@@ -73,4 +74,9 @@
 
 .player-state {
   min-width: 0;
+}
+
+/* Dim players who are not currently in the game */
+.player-row--dimmed {
+  opacity: 0.5;
 }

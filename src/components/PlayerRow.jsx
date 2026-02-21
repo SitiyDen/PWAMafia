@@ -17,7 +17,7 @@ function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, onNa
   };
 
   return (
-    <div className="player-row">
+    <div className={`player-row ${player.state !== 'В игре' ? 'player-row--dimmed' : ''}`}>
       <div className="player-cell player-cell--name">
         <span className="player-number">{player.id}</span>
         <PlayerNameSelect
