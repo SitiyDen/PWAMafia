@@ -2,6 +2,7 @@ import { useState } from 'react';
 import PlayerTable from './components/PlayerTable';
 import BottomNav from './components/BottomNav';
 import EventsScreen from './components/EventsScreen';
+import GameTimer from './components/GameTimer';
 import SettingsScreen from './components/SettingsScreen';
 import { useTournamentPlayers } from './hooks/useTournamentPlayers';
 import './App.css';
@@ -34,6 +35,7 @@ function App() {
         {activeTab === 'game' && (
           <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} />
         )}
+        {activeTab === 'game' && <GameTimer />}
         {activeTab === 'events' && <EventsScreen />}
         {activeTab === 'settings' && (
           <SettingsScreen

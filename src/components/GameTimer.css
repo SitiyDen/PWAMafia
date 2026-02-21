@@ -1,0 +1,68 @@
+.game-timer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 56px; /* sits above the bottom nav */
+  display: flex;
+  justify-content: center;
+  z-index: 105;
+  pointer-events: none;
+}
+
+.game-timer__inner {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.game-timer__time {
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.game-timer__start {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.game-timer__controls {
+  display: flex;
+  gap: 10px;
+}
+
+.game-timer__start:active {
+  opacity: 0.9;
+}
+
+@media (max-width: 420px) {
+  .game-timer__inner {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+  .game-timer__time {
+    font-size: 1.8rem;
+  }
+  .game-timer__controls {
+    width: 100%;
+    justify-content: center;
+  }
+  .game-timer__start {
+    flex: 1 1 auto;
+  }
+}
