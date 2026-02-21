@@ -1,0 +1,76 @@
+/* Таблица игроков — компактный mobile-first */
+
+.player-table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.player-table--hide-role .player-row {
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.player-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.2fr;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  background: var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  min-height: 40px;
+}
+
+.player-cell--name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.player-select {
+  min-height: 36px;
+  padding: 6px 10px;
+  padding-right: 28px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--input-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.player-select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
+}
+
+.player-role {
+  min-width: 0;
+}
+
+.player-state {
+  min-width: 0;
+}
