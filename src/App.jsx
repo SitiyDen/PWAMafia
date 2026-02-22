@@ -5,6 +5,7 @@ import EventsScreen from './components/EventsScreen';
 import GameTimer from './components/GameTimer';
 import SettingsScreen from './components/SettingsScreen';
 import { useTournamentPlayers } from './hooks/useTournamentPlayers';
+import logoPS from './assets/logoPS.png';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <img src={logoPS} alt="Logo" className="app-header__logo" />
         <h1>Мафия</h1>
         {activeTab === 'game' && (
           <button

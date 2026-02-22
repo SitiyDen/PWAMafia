@@ -13,21 +13,52 @@
 
 .bottom-nav__item {
   flex: 1;
-  padding: 10px 8px;
-  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  font-size: 0.75rem;
   font-weight: 500;
   font-family: inherit;
   color: var(--text-muted);
   background: none;
   border: none;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: color 0.2s, transform 0.15s ease;
 }
 
 .bottom-nav__item:active {
-  opacity: 0.8;
+  transform: scale(0.95);
 }
 
 .bottom-nav__item--active {
   color: var(--accent);
+}
+
+.bottom-nav__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: inherit;
+}
+
+.bottom-nav__icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%);
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.bottom-nav__item--active .bottom-nav__icon-img {
+  opacity: 1;
+  filter: brightness(0) saturate(100%) hue-rotate(270deg);
+}
+
+.bottom-nav__label {
+  white-space: nowrap;
 }

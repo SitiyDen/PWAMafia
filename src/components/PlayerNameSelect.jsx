@@ -8,6 +8,7 @@ function PlayerNameSelect({ value, options, onChange, placeholder = '—' }) {
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
+  const inputRef = useRef(null);
 
   const filtered = query.trim()
     ? options.filter((nick) =>
@@ -18,8 +19,13 @@ function PlayerNameSelect({ value, options, onChange, placeholder = '—' }) {
   const displayValue = open ? query : (value || '');
 
   useEffect(() => {
-    if (open) setQuery(value || '');
-    else setQuery('');
+    if (open) {
+      setQuery(value || '');
+      // Focus input after modal opens
+      setTimeout(() => inputRef.current?.focus(), 0);
+    } else {
+      setQuery('');
+    }
   }, [open, value]);
 
   useEffect(() => {
@@ -42,7 +48,6 @@ function PlayerNameSelect({ value, options, onChange, placeholder = '—' }) {
 
   const handleChange = (e) => {
     setQuery(e.target.value);
-    setOpen(true);
   };
 
   const handleKeyDown = (e) => {
@@ -52,9 +57,17 @@ function PlayerNameSelect({ value, options, onChange, placeholder = '—' }) {
     }
   };
 
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setOpen(false);
+      setQuery('');
+    }
+  };
+
   return (
     <div className="player-name-select" ref={containerRef}>
       <input
+        ref={inputRef}
         type="text"
         className="player-name-select__input"
         value={displayValue}
@@ -65,28 +78,60 @@ function PlayerNameSelect({ value, options, onChange, placeholder = '—' }) {
         autoComplete="off"
       />
       {open && (
-        <ul className="player-name-select__dropdown">
-          <li
-            className="player-name-select__option"
-            onClick={() => handleSelect('')}
-          >
-            {placeholder}
-          </li>
-          {filtered.slice(0, 80).map((nick) => (
-            <li
-              key={nick}
-              className="player-name-select__option"
-              onClick={() => handleSelect(nick)}
-            >
-              {nick || '(пусто)'}
-            </li>
-          ))}
-          {filtered.length > 80 && (
-            <li className="player-name-select__hint">
-              Найдено {filtered.length}, введите больше букв
-            </li>
-          )}
-        </ul>
+        <>
+          <div
+            className="player-name-select__backdrop"
+            onClick={handleBackdropClick}
+          />
+          <div className="player-name-select__modal">
+            <div className="player-name-select__modal-content">
+              <div className="player-name-select__modal-header">
+                <h2 className="player-name-select__modal-title">Выбор игрока</h2>
+                <button
+                  className="player-name-select__close-btn"
+                  onClick={() => {
+                    setOpen(false);
+                    setQuery('');
+                  }}
+                  aria-label="Закрыть"
+                >
+                  ✕
+                </button>
+              </div>
+              <input
+                type="text"
+                className="player-name-select__modal-search"
+                value={query}
+                onChange={handleChange}
+                onKeyDown={handleKeyDown}
+                placeholder="Поиск игрока..."
+                autoComplete="off"
+              />
+              <ul className="player-name-select__modal-list">
+                <li
+                  className="player-name-select__modal-option"
+                  onClick={() => handleSelect('')}
+                >
+                  {placeholder}
+                </li>
+                {filtered.slice(0, 200).map((nick) => (
+                  <li
+                    key={nick}
+                    className="player-name-select__modal-option"
+                    onClick={() => handleSelect(nick)}
+                  >
+                    {nick || '(пусто)'}
+                  </li>
+                ))}
+                {filtered.length > 200 && (
+                  <li className="player-name-select__modal-hint">
+                    Найдено {filtered.length}, введите больше букв
+                  </li>
+                )}
+              </ul>
+            </div>
+          </div>
+        </>
       )}
     </div>
   );
