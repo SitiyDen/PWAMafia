@@ -1,17 +1,27 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import PlayerTable from './components/PlayerTable';
 import BottomNav from './components/BottomNav';
 import EventsScreen from './components/EventsScreen';
 import GameTimer from './components/GameTimer';
 import SettingsScreen from './components/SettingsScreen';
 import { useTournamentPlayers } from './hooks/useTournamentPlayers';
+import { useLocalStorage } from './hooks/useLocalStorage';
 import logoPS from './assets/logoPS.png';
 import './App.css';
 
 function App() {
   const [activeTab, setActiveTab] = useState('game');
   const [showRoleColumn, setShowRoleColumn] = useState(true);
+  const [soundOn, setSoundOn] = useState(true);
+  const SCENES = ['Заставка', 'Игра'];
+  const [scene, setScene] = useState(SCENES[1]);
   const { tournamentPlayers, loading, error, refresh } = useTournamentPlayers();
+  
+  const [useOBS] = useLocalStorage('mafia-use-obs', 'false');
+  const [showTimer] = useLocalStorage('mafia-show-timer', 'true');
+  
+  const obsEnabled = useOBS === 'true';
+  const timerVisible = showTimer === 'true';
 
   return (
     <div className="app">
@@ -37,7 +47,46 @@ function App() {
         {activeTab === 'game' && (
           <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} />
         )}
-        {activeTab === 'game' && <GameTimer />}
+        {activeTab === 'game' && (
+          <div className="game-hud">
+            {obsEnabled && (
+              <div className="game-hud__controls">
+                <div className="scene-switch">
+                  <div className="scene-label">Сцена:</div>
+                  <div className="scene-toggle">
+                    {SCENES.map((s) => (
+                      <button
+                        key={s}
+                        type="button"
+                        className={`scene-btn ${scene === s ? 'active' : ''}`}
+                        onClick={() => setScene(s)}
+                      >
+                        {s}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <label className={`toggle ${soundOn ? 'toggle--on' : 'toggle--off'}`}>
+                  <span className="toggle-label">{soundOn ? 'Звук: Вкл' : 'Звук: Выкл'}</span>
+                  <input
+                    type="checkbox"
+                    checked={soundOn}
+                    onChange={() => setSoundOn((s) => !s)}
+                    aria-label={soundOn ? 'Отключить звук' : 'Включить звук'}
+                  />
+                  <span className="toggle-slider" aria-hidden="true" />
+                </label>
+              </div>
+            )}
+
+            {timerVisible && (
+              <div className="game-hud__timer">
+                <GameTimer />
+              </div>
+            )}
+          </div>
+        )}
         {activeTab === 'events' && <EventsScreen />}
         {activeTab === 'settings' && (
           <SettingsScreen

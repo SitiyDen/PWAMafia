@@ -49,14 +49,12 @@
   width: 24px;
   height: 24px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%);
-  opacity: 0.6;
-  transition: opacity 0.2s ease;
+  filter: brightness(0.6) saturate(0);
+  transition: filter 0.2s ease;
 }
 
 .bottom-nav__item--active .bottom-nav__icon-img {
-  opacity: 1;
-  filter: brightness(0) saturate(100%) hue-rotate(270deg);
+  filter: drop-shadow(0 0 0 var(--accent));
 }
 
 .bottom-nav__label {

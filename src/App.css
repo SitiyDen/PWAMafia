@@ -64,6 +64,152 @@
   width: 100%;
 }
 
+/* Game page controls (sound / scene) */
+.game-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+
+.game-control {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  min-width: 140px;
+}
+
+.game-control--sound.on {
+  background: #10B981; /* green */
+  color: #fff;
+}
+
+.game-control--sound.off {
+  background: #ef4444; /* red */
+  color: #fff;
+}
+
+.game-control--scene {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 520px) {
+  .game-control { min-width: 48%; }
+}
+
+/* Unified HUD: controls + timer */
+.game-hud {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  margin: 12px 0;
+}
+
+.game-hud__controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.game-hud__timer {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .game-hud { flex-direction: column; align-items: stretch; }
+  .game-hud__controls { justify-content: center; }
+  .game-hud__timer { justify-content: center; }
+}
+
+/* Scene switcher */
+.scene-switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scene-label {
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.scene-toggle {
+  display: inline-flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.scene-btn {
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.scene-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (max-width: 520px) {
+  .scene-switch { width: 100%; justify-content: center; }
+  .scene-toggle { width: 100%; }
+  .scene-btn { flex: 1; }
+}
+
+/* Toggle switch for sound */
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  flex-direction: row-reverse;
+}
+
+.toggle input { display: none; }
+
+.toggle-slider {
+  width: 48px;
+  height: 26px;
+  background: #d1d5db; /* gray-300 */
+  border-radius: 999px;
+  position: relative;
+  transition: background 0.18s ease;
+  flex-shrink: 0;
+}
+
+.toggle-slider::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+  transition: transform 0.18s ease;
+}
+
+.toggle--on .toggle-slider { background: #10B981; }
+.toggle--on .toggle-slider::after { transform: translateX(22px); }
+
+.toggle-label { font-weight: 700; color: var(--text); }
+
 .screen-placeholder {
   padding: 16px 0;
   text-align: center;

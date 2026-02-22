@@ -8,9 +8,19 @@ function SettingsScreen({
   onRefresh,
 }) {
   const [tableNumber, setTableNumber] = useLocalStorage('mafia-table-number', '1');
+  const [useOBS, setUseOBS] = useLocalStorage('mafia-use-obs', 'false');
+  const [showTimer, setShowTimer] = useLocalStorage('mafia-show-timer', 'true');
 
   const handleTableNumberChange = (e) => {
     setTableNumber(e.target.value);
+  };
+
+  const toggleOBS = () => {
+    setUseOBS((v) => (v === 'true' ? 'false' : 'true'));
+  };
+
+  const toggleTimer = () => {
+    setShowTimer((v) => (v === 'true' ? 'false' : 'true'));
   };
 
   return (
@@ -29,6 +39,28 @@ function SettingsScreen({
             </option>
           ))}
         </select>
+      </div>
+
+      <div className="settings-screen__section">
+        <h3 className="settings-screen__subtitle">Опции</h3>
+        <label className="settings-screen__option">
+          <input
+            type="checkbox"
+            checked={useOBS === 'true'}
+            onChange={toggleOBS}
+            aria-label="Использовать OBS"
+          />
+          <span>Использовать OBS</span>
+        </label>
+        <label className="settings-screen__option">
+          <input
+            type="checkbox"
+            checked={showTimer === 'true'}
+            onChange={toggleTimer}
+            aria-label="Показывать таймер"
+          />
+          <span>Показывать таймер</span>
+        </label>
       </div>
 
       <div className="settings-screen__section">
