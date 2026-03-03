@@ -59,3 +59,54 @@ export async function fetchTournamentPlayersFromSheets() {
   const players = parseColumnAFromCSV(text);
   return players;
 }
+
+/**
+ * Обновляет имя игрока в Google Sheets для указанного стола
+ * 
+ * ВАЖНО: Перед использованием нужно создать Google Apps Script Web App
+ * 
+ * Инструкция:
+ * 1. Откройте https://script.google.com
+ * 2. Создайте новый проект
+ * 3. Замените код на код из /scripts/appsScript.gs
+ * 4. Разверните как Web App (Deploy -> New deployment -> Web app)
+ * 5. Скопируйте URL развернутого приложения
+ * 6. Создайте файл .env с переменной VITE_APPS_SCRIPT_URL или используйте через константу
+ * 
+ * @param {number} tableNumber Номер стола (1, 2, 3...)
+ * @param {number} playerNumber Номер игрока в таблице (1-10)
+ * @param {string} playerName Имя игрока
+ * @returns {Promise<void>}
+ */
+export async function updatePlayerNameInSheets(tableNumber, playerNumber, playerName) {
+  // Получаем URL из переменных окружения или используем значение по умолчанию
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        action: 'updatePlayerName',
+        tableNumber: tableNumber,
+        playerNumber: playerNumber,
+        playerName: playerName,
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка обновления Google Sheets: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script:', error);
+  }
+}

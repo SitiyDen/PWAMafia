@@ -19,9 +19,11 @@ function App() {
   
   const [useOBS] = useLocalStorage('mafia-use-obs', 'false');
   const [showTimer] = useLocalStorage('mafia-show-timer', 'true');
+  const [tableNumber] = useLocalStorage('mafia-table-number', '1');
   
   const obsEnabled = useOBS === 'true';
   const timerVisible = showTimer === 'true';
+
 
   return (
     <div className="app">
@@ -45,7 +47,7 @@ function App() {
       </header>
       <main className="app-main">
         {activeTab === 'game' && (
-          <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} />
+          <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} tableNumber={parseInt(tableNumber, 10)} />
         )}
         {activeTab === 'game' && (
           <div className="game-hud">

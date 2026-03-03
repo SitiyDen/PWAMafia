@@ -6,7 +6,7 @@ import './PlayerTable.css';
 /**
  * Таблица игроков с сохранением в localStorage
  */
-function PlayerTable({ showRoleColumn = true, tournamentPlayers = [] }) {
+function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumber = 1 }) {
   const [players, setPlayers] = useLocalStorage('mafia-players', getDefaultPlayers());
   const DEFAULT_EVENTS = { rows: [Array(3).fill(''), Array(7).fill(''), Array(7).fill(''), Array(7).fill(''), Array(7).fill('')] };
   const [events, setEvents] = useLocalStorage('mafia-events', DEFAULT_EVENTS);
@@ -94,6 +94,7 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [] }) {
           player={player}
           tournamentPlayers={tournamentPlayers}
           showRoleColumn={showRoleColumn}
+          tableNumber={tableNumber}
           onNameChange={handleNameChange}
           onRoleChange={handleRoleChange}
           onStateChange={handleStateChange}

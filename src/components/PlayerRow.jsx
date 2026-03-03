@@ -2,11 +2,19 @@ import { ROLES, STATES } from '../data/constants';
 import PlayerNameSelect from './PlayerNameSelect';
 import './PlayerTable.css';
 
+import { updatePlayerNameInSheets } from '../api/sheets';
+
 /**
  * Строка с данными одного игрока
  */
-function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, onNameChange, onRoleChange, onStateChange }) {
-  const handleNameChange = (nick) => onNameChange(player.id, nick);
+function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, tableNumber = 1, onNameChange, onRoleChange, onStateChange }) {
+  const handleNameChange = (nick) => {
+    onNameChange(player.id, nick);
+    // Update Google Sheets
+    updatePlayerNameInSheets(tableNumber, player.id, nick).catch(
+      (err) => console.error('Failed to update sheets:', err)
+    );
+  };
 
   const handleRoleChange = (e) => {
     onRoleChange(player.id, e.target.value);
