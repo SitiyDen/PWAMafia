@@ -14,7 +14,7 @@ function SettingsScreen({
   // OBS websocket address can be configured by the user
   const [obsAddress, setObsAddress] = useLocalStorage(
     'mafia-obs-address',
-    'ws://192.168.0.174:4455'
+    'wss://192.168.0.174:4455'
   );
 
   const [obsStatus, setObsStatus] = useState('disconnected');
