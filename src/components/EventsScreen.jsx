@@ -1,7 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { resetGameInSheets } from '../api/sheets';
-import { useLocalStorage } from '../hooks/useLocalStorage';
 import { getDefaultPlayers } from '../data/constants';
 import './EventsScreen.css';
 
