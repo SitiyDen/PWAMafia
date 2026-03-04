@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
-import { resetGameInSheets } from '../api/sheets';
+import { resetGameInSheets, updateEventCellInSheets } from '../api/sheets';
 import { getDefaultPlayers } from '../data/constants';
 import './EventsScreen.css';
 
@@ -75,6 +75,14 @@ function EventsScreen() {
         const el = inputRefs.current[rowIdx][next];
         if (el && typeof el.focus === 'function') el.focus();
       }
+    }
+
+    // push individual update to Google Sheets depending on rules
+    // best move row only send on third cell (idx === 2)
+    if (rowIdx !== BEST_MOVE_IDX || idx === 2) {
+      updateEventCellInSheets(parseInt(tableNumber, 10), rowIdx, idx, v).catch(err =>
+        console.error('Failed to update event cell in sheets:', err)
+      );
     }
   };
 

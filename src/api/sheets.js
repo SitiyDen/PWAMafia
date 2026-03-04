@@ -253,6 +253,46 @@ export async function syncEventsToSheets(tableNumber, rows) {
 }
 
 /**
+ * Обновляет одну ячейку в таблице событий на Google Sheets.
+ *
+ * Для строки "Лучший ход" отправка выполняется только для третьей ячейки (idx === 2),
+ * для остальных строк — при каждом изменении.
+ *
+ * @param {number} tableNumber Номер стола
+ * @param {number} rowIdx Индекс строки из массива rows (0–4)
+ * @param {number} cellIdx Индекс ячейки в строке
+ * @param {string} value Значение (пустая строка для очистки)
+ * @returns {Promise<void>}
+ */
+export async function updateEventCellInSheets(tableNumber, rowIdx, cellIdx, value) {
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      body: new URLSearchParams({
+        action: 'updateEventCell',
+        tableNumber: tableNumber.toString(),
+        rowIdx: rowIdx.toString(),
+        cellIdx: cellIdx.toString(),
+        value,
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка обновления ячейки событий: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script при updateEventCell:', error);
+  }
+}
+
+/**
  * Сбрасывает данные игрока в Google Sheets для указанного стола
  * Удаляет значения в колонках A2-A11, E2-E11, F2-F11, G2-G11, H2-H11, I2-I3
  * Устанавливает по умолчанию роли «Мирный» (B) и состояние «В игре» (C)

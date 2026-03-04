@@ -1,6 +1,5 @@
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { getDefaultPlayers } from '../data/constants';
-import { syncEventsToSheets } from '../api/sheets';
 import PlayerRow from './PlayerRow';
 import './PlayerTable.css';
 import { useEffect } from 'react';
@@ -22,13 +21,6 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
   const handleNameChange = (id, name) => updatePlayer(id, 'name', name);
   const handleRoleChange = (id, role) => updatePlayer(id, 'role', role);
 
-  // Sync all event rows to Google Sheets when they change
-  useEffect(() => {
-    // rows is an array of 5 arrays (best move, don, sheriff, shots, votes)
-    syncEventsToSheets(tableNumber, events.rows).catch(err =>
-      console.error('Failed to sync events:', err)
-    );
-  }, [events.rows, tableNumber]);
 
   const handleStateChange = (id, state) => {
     setPlayers((prev) => {
