@@ -87,17 +87,13 @@ export async function updatePlayerNameInSheets(tableNumber, playerNumber, player
     return;
   }
 
-  try {
+   try {
     const response = await fetch(appsScriptUrl, {
       method: 'POST',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
+      body: new URLSearchParams({
         action: 'updatePlayerName',
-        tableNumber: tableNumber,
-        playerNumber: playerNumber,
+        tableNumber: tableNumber.toString(),
+        playerNumber: playerNumber.toString(),
         playerName: playerName,
         spreadsheetId: SHEET_ID,
       }),
