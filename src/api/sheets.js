@@ -106,3 +106,75 @@ export async function updatePlayerNameInSheets(tableNumber, playerNumber, player
     console.error('Ошибка подключения к Google Apps Script:', error);
   }
 }
+
+/**
+ * Обновляет роль игрока в Google Sheets для указанного стола
+ * 
+ * @param {number} tableNumber Номер стола (1, 2, 3...)
+ * @param {number} playerNumber Номер игрока в таблице (1-10)
+ * @param {string} playerRole Роль игрока
+ * @returns {Promise<void>}
+ */
+export async function updatePlayerRoleInSheets(tableNumber, playerNumber, playerRole) {
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      body: new URLSearchParams({
+        action: 'updatePlayerRole',
+        tableNumber: tableNumber.toString(),
+        playerNumber: playerNumber.toString(),
+        playerRole: playerRole,
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка обновления Google Sheets: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script:', error);
+  }
+}
+
+/**
+ * Обновляет состояние игрока в Google Sheets для указанного стола
+ * 
+ * @param {number} tableNumber Номер стола (1, 2, 3...)
+ * @param {number} playerNumber Номер игрока в таблице (1-10)
+ * @param {string} playerState Состояние игрока
+ * @returns {Promise<void>}
+ */
+export async function updatePlayerStateInSheets(tableNumber, playerNumber, playerState) {
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      body: new URLSearchParams({
+        action: 'updatePlayerState',
+        tableNumber: tableNumber.toString(),
+        playerNumber: playerNumber.toString(),
+        playerState: playerState,
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка обновления Google Sheets: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script:', error);
+  }
+}

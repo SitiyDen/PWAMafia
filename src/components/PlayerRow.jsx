@@ -2,7 +2,7 @@ import { ROLES, STATES } from '../data/constants';
 import PlayerNameSelect from './PlayerNameSelect';
 import './PlayerTable.css';
 
-import { updatePlayerNameInSheets } from '../api/sheets';
+import { updatePlayerNameInSheets, updatePlayerRoleInSheets, updatePlayerStateInSheets } from '../api/sheets';
 
 /**
  * Строка с данными одного игрока
@@ -17,11 +17,21 @@ function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, tabl
   };
 
   const handleRoleChange = (e) => {
-    onRoleChange(player.id, e.target.value);
+    const newRole = e.target.value;
+    onRoleChange(player.id, newRole);
+    // Update Google Sheets
+    updatePlayerRoleInSheets(tableNumber, player.id, newRole).catch(
+      (err) => console.error('Failed to update sheets:', err)
+    );
   };
 
   const handleStateChange = (e) => {
-    onStateChange(player.id, e.target.value);
+    const newState = e.target.value;
+    onStateChange(player.id, newState);
+    // Update Google Sheets
+    updatePlayerStateInSheets(tableNumber, player.id, newState).catch(
+      (err) => console.error('Failed to update sheets:', err)
+    );
   };
 
   return (
