@@ -180,6 +180,42 @@ export async function updatePlayerStateInSheets(tableNumber, playerNumber, playe
 }
 
 /**
+ * Синхронизирует данные отстрелов и голосований в Google Sheets
+ * 
+ * @param {number} tableNumber Номер стола (1, 2, 3...)
+ * @param {string[]} shots Массив ID игроков из отстрелов (events.rows[3])
+ * @param {string[]} votes Массив ID игроков из голосований (events.rows[4])
+ * @returns {Promise<void>}
+ */
+export async function syncShotsAndVotesToSheets(tableNumber, shots, votes) {
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      body: new URLSearchParams({
+        action: 'syncShotsAndVotes',
+        tableNumber: tableNumber.toString(),
+        shots: JSON.stringify(shots),
+        votes: JSON.stringify(votes),
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка синхронизации отстрелов/голосований: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script:', error);
+  }
+}
+
+/**
  * Сбрасывает данные игрока в Google Sheets для указанного стола
  * Удаляет значения в колонках A2-A11, E2-E11, F2-F11, G2-G11, H2-H11, I2-I3
  * Устанавливает по умолчанию роли «Мирный» (B) и состояние «В игре» (C)

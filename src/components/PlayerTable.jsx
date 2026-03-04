@@ -1,7 +1,9 @@
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { getDefaultPlayers } from '../data/constants';
+import { syncShotsAndVotesToSheets } from '../api/sheets';
 import PlayerRow from './PlayerRow';
 import './PlayerTable.css';
+import { useEffect } from 'react';
 
 /**
  * Таблица игроков с сохранением в localStorage
@@ -19,6 +21,15 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
 
   const handleNameChange = (id, name) => updatePlayer(id, 'name', name);
   const handleRoleChange = (id, role) => updatePlayer(id, 'role', role);
+
+  // Sync shots and votes to Google Sheets when they change
+  useEffect(() => {
+    const shots = events.rows[3] || [];
+    const votes = events.rows[4] || [];
+    syncShotsAndVotesToSheets(tableNumber, shots, votes).catch(err =>
+      console.error('Failed to sync shots/votes:', err)
+    );
+  }, [events.rows[3], events.rows[4], tableNumber]);
 
   const handleStateChange = (id, state) => {
     setPlayers((prev) => {
