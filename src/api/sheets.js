@@ -178,3 +178,36 @@ export async function updatePlayerStateInSheets(tableNumber, playerNumber, playe
     console.error('Ошибка подключения к Google Apps Script:', error);
   }
 }
+
+/**
+ * Сбрасывает данные игрока в Google Sheets для указанного стола
+ * Удаляет значения в колонках A2-A11, E2-E11, F2-F11, G2-G11, H2-H11, I2-I3
+ * Устанавливает по умолчанию роли «Мирный» (B) и состояние «В игре» (C)
+ *
+ * @param {number} tableNumber Номер стола
+ * @returns {Promise<void>}
+ */
+export async function resetGameInSheets(tableNumber) {
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      body: new URLSearchParams({
+        action: 'resetGame',
+        tableNumber: tableNumber.toString(),
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка сброса Google Sheets: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script:', error);
+  }
+}

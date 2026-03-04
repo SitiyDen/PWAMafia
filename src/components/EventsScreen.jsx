@@ -1,5 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
+import { resetGameInSheets } from '../api/sheets';
+import { useLocalStorage } from '../hooks/useLocalStorage';
 import { getDefaultPlayers } from '../data/constants';
 import './EventsScreen.css';
 
@@ -34,6 +36,7 @@ function EventsScreen() {
   const inputRefs = useRef(ROW_LENGTHS.map((len) => Array(len).fill(null)));
 
   const [, setPlayers] = useLocalStorage('mafia-players', getDefaultPlayers());
+  const [tableNumber] = useLocalStorage('mafia-table-number', '1');
 
   const resetGame = () => {
     const ok = window.confirm('Вы уверены что хотите начать новую игру?');
@@ -43,6 +46,11 @@ function EventsScreen() {
     setPlayers(getDefaultPlayers());
     // clear events
     setEvents(initial);
+
+    // reset google sheets if configured
+    resetGameInSheets(parseInt(tableNumber, 10)).catch(err =>
+      console.error('Failed to reset sheets:', err)
+    );
   };
 
   const handleChange = (rowIdx, idx, raw) => {
