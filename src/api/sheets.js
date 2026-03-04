@@ -216,6 +216,43 @@ export async function syncShotsAndVotesToSheets(tableNumber, shots, votes) {
 }
 
 /**
+ * Синхронизирует все события (строки) в Google Sheets
+ * @param {number} tableNumber Номер стола
+ * @param {Array<Array<string>>} rows Массив строк событий (length 5)
+ *   0: Лучший ход (3 элемента)
+ *   1: Проверки Дона (7 элементов)
+ *   2: Проверки Шерифа (7 элементов)
+ *   3: Отстрелы (7 элементов)
+ *   4: Голосование (7 элементов)
+ */
+export async function syncEventsToSheets(tableNumber, rows) {
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      body: new URLSearchParams({
+        action: 'syncEvents',
+        tableNumber: tableNumber.toString(),
+        rows: JSON.stringify(rows),
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка синхронизации событий: ${response.status}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script при syncEvents:', error);
+  }
+}
+
+/**
  * Сбрасывает данные игрока в Google Sheets для указанного стола
  * Удаляет значения в колонках A2-A11, E2-E11, F2-F11, G2-G11, H2-H11, I2-I3
  * Устанавливает по умолчанию роли «Мирный» (B) и состояние «В игре» (C)
