@@ -3,6 +3,7 @@ import { getDefaultPlayers } from '../data/constants';
 import PlayerRow from './PlayerRow';
 import './PlayerTable.css';
 import { useEffect } from 'react';
+import { syncShotsAndVotesToSheets } from '../api/sheets';
 
 /**
  * Таблица игроков с сохранением в localStorage
@@ -40,6 +41,10 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               const emptyIdx = shots.findIndex((s) => s === '');
               if (emptyIdx !== -1) shots[emptyIdx] = strId;
             }
+            // sync updated shots to sheets
+            syncShotsAndVotesToSheets(tableNumber, shots, copy.rows[4]).catch(err =>
+              console.error('Failed to sync shots/votes to sheets:', err)
+            );
             return copy;
           });
         } else if (prevState === 'Убит' && state !== 'Убит') {
@@ -53,6 +58,10 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               for (let i = idx; i < shots.length - 1; i++) shots[i] = shots[i + 1];
               shots[shots.length - 1] = '';
             }
+            // sync change
+            syncShotsAndVotesToSheets(tableNumber, shots, copy.rows[4]).catch(err =>
+              console.error('Failed to sync shots/votes to sheets:', err)
+            );
             return copy;
           });
         }
@@ -67,6 +76,9 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               const emptyIdx = votes.findIndex((s) => s === '');
               if (emptyIdx !== -1) votes[emptyIdx] = strId;
             }
+            syncShotsAndVotesToSheets(tableNumber, copy.rows[3], votes).catch(err =>
+              console.error('Failed to sync shots/votes to sheets:', err)
+            );
             return copy;
           });
         } else if (prevState === 'Заголосован' && state !== 'Заголосован') {
@@ -79,6 +91,9 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               for (let i = idx; i < votes.length - 1; i++) votes[i] = votes[i + 1];
               votes[votes.length - 1] = '';
             }
+            syncShotsAndVotesToSheets(tableNumber, copy.rows[3], votes).catch(err =>
+              console.error('Failed to sync shots/votes to sheets:', err)
+            );
             return copy;
           });
         }

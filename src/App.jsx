@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import PlayerTable from './components/PlayerTable';
 import BottomNav from './components/BottomNav';
 import EventsScreen from './components/EventsScreen';
@@ -6,6 +6,7 @@ import GameTimer from './components/GameTimer';
 import SettingsScreen from './components/SettingsScreen';
 import { useTournamentPlayers } from './hooks/useTournamentPlayers';
 import { useLocalStorage } from './hooks/useLocalStorage';
+import { loadTableDataFromSheets } from './api/sheets';
 import logoPS from './assets/logoPS.png';
 import './App.css';
 
@@ -19,10 +20,26 @@ function App() {
   
   const [useOBS] = useLocalStorage('mafia-use-obs', 'false');
   const [showTimer] = useLocalStorage('mafia-show-timer', 'true');
-  const [tableNumber] = useLocalStorage('mafia-table-number', '1');
+  const [tableNumber, setTableNumber] = useLocalStorage('mafia-table-number', '1');
   
   const obsEnabled = useOBS === 'true';
   const timerVisible = showTimer === 'true';
+
+  // Load table data when tableNumber changes
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        const data = await loadTableDataFromSheets(parseInt(tableNumber, 10));
+        if (data) {
+          // Update localStorage for players only
+          localStorage.setItem('mafia-players', JSON.stringify(data.players));
+        }
+      } catch (error) {
+        console.error('Failed to load table data:', error);
+      }
+    };
+    loadData();
+  }, [tableNumber]);
 
 
   return (
@@ -69,16 +86,28 @@ function App() {
                   </div>
                 </div>
 
-                <label className={`toggle ${soundOn ? 'toggle--on' : 'toggle--off'}`}>
-                  <span className="toggle-label">{soundOn ? 'Звук: Вкл' : 'Звук: Выкл'}</span>
-                  <input
-                    type="checkbox"
-                    checked={soundOn}
-                    onChange={() => setSoundOn((s) => !s)}
-                    aria-label={soundOn ? 'Отключить звук' : 'Включить звук'}
-                  />
-                  <span className="toggle-slider" aria-hidden="true" />
-                </label>
+                {/* sound buttons mirror scene switch style */}
+                <div className="sound-switch">
+                  <div className="scene-label">Звук:</div>
+                  <div className="scene-toggle">
+                    <button
+                      type="button"
+                      className={`scene-btn ${soundOn ? 'active' : ''}`}
+                      onClick={() => setSoundOn(true)}
+                      aria-label="Включить звук"
+                    >
+                      Вкл
+                    </button>
+                    <button
+                      type="button"
+                      className={`scene-btn ${!soundOn ? 'active' : ''}`}
+                      onClick={() => setSoundOn(false)}
+                      aria-label="Выключить звук"
+                    >
+                      Выкл
+                    </button>
+                  </div>
+                </div>
               </div>
             )}
 

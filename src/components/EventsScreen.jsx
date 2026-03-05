@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
-import { resetGameInSheets, updateEventCellInSheets } from '../api/sheets';
+import { resetGameInSheets, updateEventCellInSheets, updatePlayerStateInSheets } from '../api/sheets';
 import { getDefaultPlayers } from '../data/constants';
 import './EventsScreen.css';
 
@@ -34,7 +34,7 @@ function EventsScreen() {
 
   const inputRefs = useRef(ROW_LENGTHS.map((len) => Array(len).fill(null)));
 
-  const [, setPlayers] = useLocalStorage('mafia-players', getDefaultPlayers());
+  const [players, setPlayers] = useLocalStorage('mafia-players', getDefaultPlayers());
   const [tableNumber] = useLocalStorage('mafia-table-number', '1');
 
   const resetGame = () => {
@@ -77,13 +77,25 @@ function EventsScreen() {
       }
     }
 
-    // push individual update to Google Sheets depending on rules
-    // best move row only send on third cell (idx === 2)
-    if (rowIdx !== BEST_MOVE_IDX || idx === 2) {
-      updateEventCellInSheets(parseInt(tableNumber, 10), rowIdx, idx, v).catch(err =>
-        console.error('Failed to update event cell in sheets:', err)
+    // update player state for Отстрелы and Голосование
+    if (rowIdx === 3 && v !== '') { // Отстрелы
+      const playerId = parseInt(v, 10);
+      setPlayers(prev => prev.map(p => p.id === playerId ? { ...p, state: 'Убит' } : p));
+      updatePlayerStateInSheets(parseInt(tableNumber, 10), playerId, 'Убит').catch(err =>
+        console.error('Failed to update player state in sheets:', err)
+      );
+    } else if (rowIdx === 4 && v !== '') { // Голосование
+      const playerId = parseInt(v, 10);
+      setPlayers(prev => prev.map(p => p.id === playerId ? { ...p, state: 'Заголосован' } : p));
+      updatePlayerStateInSheets(parseInt(tableNumber, 10), playerId, 'Заголосован').catch(err =>
+        console.error('Failed to update player state in sheets:', err)
       );
     }
+
+    // push individual update to Google Sheets
+    updateEventCellInSheets(parseInt(tableNumber, 10), rowIdx, idx, v).catch(err =>
+      console.error('Failed to update event cell in sheets:', err)
+    );
   };
 
   const values = events.rows;

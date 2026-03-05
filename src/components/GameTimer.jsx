@@ -39,7 +39,7 @@ function GameTimer({ initial = 60 }) {
         <div className="game-timer__row">
           <button type="button" className="game-timer__btn" onClick={() => start(30)}>30s</button>
           <div className="game-timer__display">
-            <div className="game-timer__time" aria-live="polite">{format(secondsLeft)}</div>
+            <div className={`game-timer__time ${secondsLeft <= 10 && running ? 'game-timer__time--warning' : ''}`} aria-live="polite">{format(secondsLeft)}</div>
           </div>
           <button type="button" className="game-timer__btn" onClick={() => start(60)}>60s</button>
         </div>

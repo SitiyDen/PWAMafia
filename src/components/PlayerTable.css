@@ -7,13 +7,16 @@
   gap: 6px;
 }
 
+/* make name column wider so the state/role selects stay compact */
 .player-table--hide-role .player-row {
-  grid-template-columns: 1fr 1.2fr;
+  /* two columns: name | state; state width based on content */
+  grid-template-columns: 2fr auto;
 }
 
 .player-row {
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1.2fr;
+  /* name takes remaining space, selects size to their content */
+  grid-template-columns: 2fr auto auto;
   gap: 8px;
   align-items: center;
   padding: 8px 10px;

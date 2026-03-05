@@ -132,7 +132,8 @@
 }
 
 /* Scene switcher */
-.scene-switch {
+.scene-switch,
+.sound-switch {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -142,6 +143,8 @@
   font-weight: 700;
   color: var(--text-muted);
 }
+
+/* use same label style for sound, reuse scene-label */
 
 .scene-toggle {
   display: inline-flex;

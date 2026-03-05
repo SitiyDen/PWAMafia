@@ -208,9 +208,27 @@ function SettingsScreen({
               </label>
             </div>
             <p>Статус OBS: {obsStatus}</p>
-            <button onClick={toggleMute}>
-              {isMuted ? 'Включить звук' : 'Выключить звук'}
-            </button>
+            <div className="sound-switch">
+              <div className="scene-label">Звук:</div>
+              <div className="scene-toggle">
+                <button
+                  type="button"
+                  className={`scene-btn ${!isMuted ? 'active' : ''}`}
+                  onClick={() => { if (isMuted) toggleMute(); }}
+                  aria-label="Включить звук"
+                >
+                  Вкл
+                </button>
+                <button
+                  type="button"
+                  className={`scene-btn ${isMuted ? 'active' : ''}`}
+                  onClick={() => { if (!isMuted) toggleMute(); }}
+                  aria-label="Выключить звук"
+                >
+                  Выкл
+                </button>
+              </div>
+            </div>
           </div>
         )}
 

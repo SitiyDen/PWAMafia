@@ -98,15 +98,27 @@ function PlayerNameSelect({ value, options, onChange, placeholder = '—' }) {
                   ✕
                 </button>
               </div>
-              <input
-                type="text"
-                className="player-name-select__modal-search"
-                value={query}
-                onChange={handleChange}
-                onKeyDown={handleKeyDown}
-                placeholder="Поиск игрока..."
-                autoComplete="off"
-              />
+              <div className="player-name-select__modal-search-wrapper">
+                <input
+                  type="text"
+                  className="player-name-select__modal-search"
+                  value={query}
+                  onChange={handleChange}
+                  onKeyDown={handleKeyDown}
+                  placeholder="Поиск игрока..."
+                  autoComplete="off"
+                />
+                {query && (
+                  <button
+                    type="button"
+                    className="player-name-select__clear-btn"
+                    onClick={() => setQuery('')}
+                    aria-label="Очистить поиск"
+                  >
+                    ✕
+                  </button>
+                )}
+              </div>
               <ul className="player-name-select__modal-list">
                 <li
                   className="player-name-select__modal-option"
