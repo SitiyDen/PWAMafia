@@ -21,7 +21,7 @@ function App() {
   const { tournamentPlayers, loading, error, refresh } = useTournamentPlayers();
   
   const [useOBS] = useLocalStorage('mafia-use-obs', 'false');
-  const [showTimer] = useLocalStorage('mafia-show-timer', 'false');
+  const [showTimer] = useLocalStorage('mafia-show-timer', 'true');
   const { tableNumber } = useTableNumber();
   const [players, setPlayers] = useState(() => {
     try {

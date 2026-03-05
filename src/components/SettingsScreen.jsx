@@ -11,7 +11,7 @@ function SettingsScreen({
 }) {
   const { tableNumber, setTableNumber } = useTableNumber();
   const [useOBS, setUseOBS] = useLocalStorage('mafia-use-obs', 'false');
-  const [showTimer, setShowTimer] = useLocalStorage('mafia-show-timer', 'false');
+  const [showTimer, setShowTimer] = useLocalStorage('mafia-show-timer', 'true');
   // OBS websocket address can be configured by the user
   const [obsAddress, setObsAddress] = useLocalStorage(
     'mafia-obs-address',
