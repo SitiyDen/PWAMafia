@@ -8,7 +8,7 @@ import { useTournamentPlayers } from './hooks/useTournamentPlayers';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { useTableNumber } from './context/TableNumberContext';
 import { loadTableDataFromSheets } from './api/sheets';
-import { getDefaultPlayers } from './data/constants';
+import { getDefaultPlayers, getDefaultEvents } from './data/constants';
 import logoPS from './assets/logoPS.png';
 import './App.css';
 
@@ -33,6 +33,16 @@ function App() {
     }
   });
   
+  const [events, setEvents] = useState(() => {
+    try {
+      const key = `mafia-events-${tableNumber}`;
+      const stored = JSON.parse(localStorage.getItem(key));
+      return stored || getDefaultEvents();
+    } catch {
+      return getDefaultEvents();
+    }
+  });
+  
   const obsEnabled = useOBS === 'true';
   const timerVisible = showTimer === 'true';
 
@@ -48,6 +58,18 @@ function App() {
     }
   }, [tableNumber]);
 
+  // Синхронизируем events с localStorage каждый раз при смене стола
+  useEffect(() => {
+    try {
+      const key = `mafia-events-${tableNumber}`;
+      const stored = JSON.parse(localStorage.getItem(key));
+      setEvents(stored || getDefaultEvents());
+    } catch (error) {
+      console.error('Error reading events from localStorage:', error);
+      setEvents(getDefaultEvents());
+    }
+  }, [tableNumber]);
+
   // Сохраняем players в localStorage при изменении
   useEffect(() => {
     try {
@@ -58,14 +80,30 @@ function App() {
     }
   }, [players, tableNumber]);
 
+  // Сохраняем events в localStorage при изменении
+  useEffect(() => {
+    try {
+      const key = `mafia-events-${tableNumber}`;
+      localStorage.setItem(key, JSON.stringify(events));
+    } catch (error) {
+      console.error('Error saving events to localStorage:', error);
+    }
+  }, [events, tableNumber]);
+
   // Load table data when tableNumber changes
   useEffect(() => {
     const loadData = async () => {
       try {
         const data = await loadTableDataFromSheets(parseInt(tableNumber, 10));
-        if (data && data.players) {
+        if (data) {
           // Update players from Google Sheets if available
-          setPlayers(data.players);
+          if (data.players) {
+            setPlayers(data.players);
+          }
+          // Update events from Google Sheets if available
+          if (data.events) {
+            setEvents(data.events);
+          }
         }
       } catch (error) {
         console.error('Failed to load table data:', error);
@@ -151,7 +189,7 @@ function App() {
             )}
           </div>
         )}
-        {activeTab === 'events' && <EventsScreen players={players} setPlayers={setPlayers} />}
+        {activeTab === 'events' && <EventsScreen players={players} setPlayers={setPlayers} events={events} setEvents={setEvents} />}
         {activeTab === 'settings' && (
           <SettingsScreen
             tournamentPlayers={tournamentPlayers}

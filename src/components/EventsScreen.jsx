@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
-import { useLocalStorage } from '../hooks/useLocalStorage';
 import { useTableNumber } from '../context/TableNumberContext';
 import { resetGameInSheets, updateEventCellInSheets, updatePlayerStateInSheets } from '../api/sheets';
+import { getDefaultPlayers, getDefaultEvents } from '../data/constants';
 import './EventsScreen.css';
 
 // Order required by user
@@ -9,14 +9,11 @@ const ROWS = ['Лучший ход', 'Проверки Дона', 'Провер�
 const ROW_LENGTHS = [3, 7, 7, 7, 7];
 const BEST_MOVE_IDX = 0;
 
-function EventsScreen({ players, setPlayers }) {
-  const initial = { rows: ROW_LENGTHS.map((len) => Array(len).fill('')) };
-  const [events, setEvents] = useLocalStorage('mafia-events', initial);
-
+function EventsScreen({ players, setPlayers, events, setEvents }) {
   // ensure stored shape
   useEffect(() => {
     if (!events || !events.rows || events.rows.length !== ROWS.length) {
-      setEvents(initial);
+      setEvents({ rows: ROW_LENGTHS.map((len) => Array(len).fill('')) });
       return;
     }
 
@@ -43,7 +40,7 @@ function EventsScreen({ players, setPlayers }) {
     // reset players to defaults
     setPlayers(getDefaultPlayers());
     // clear events
-    setEvents(initial);
+    setEvents(getDefaultEvents());
 
     // reset google sheets if configured
     resetGameInSheets(parseInt(tableNumber, 10)).catch(err =>
