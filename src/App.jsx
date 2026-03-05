@@ -6,7 +6,9 @@ import GameTimer from './components/GameTimer';
 import SettingsScreen from './components/SettingsScreen';
 import { useTournamentPlayers } from './hooks/useTournamentPlayers';
 import { useLocalStorage } from './hooks/useLocalStorage';
+import { useTableNumber } from './context/TableNumberContext';
 import { loadTableDataFromSheets } from './api/sheets';
+import { getDefaultPlayers } from './data/constants';
 import logoPS from './assets/logoPS.png';
 import './App.css';
 
@@ -20,19 +22,50 @@ function App() {
   
   const [useOBS] = useLocalStorage('mafia-use-obs', 'false');
   const [showTimer] = useLocalStorage('mafia-show-timer', 'true');
-  const [tableNumber, setTableNumber] = useLocalStorage('mafia-table-number', '1');
+  const { tableNumber } = useTableNumber();
+  const [players, setPlayers] = useState(() => {
+    try {
+      const key = `mafia-players-${tableNumber}`;
+      const stored = JSON.parse(localStorage.getItem(key));
+      return stored || getDefaultPlayers();
+    } catch {
+      return getDefaultPlayers();
+    }
+  });
   
   const obsEnabled = useOBS === 'true';
   const timerVisible = showTimer === 'true';
+
+  // Синхронизируем players с localStorage каждый раз при смене стола
+  useEffect(() => {
+    try {
+      const key = `mafia-players-${tableNumber}`;
+      const stored = JSON.parse(localStorage.getItem(key));
+      setPlayers(stored || getDefaultPlayers());
+    } catch (error) {
+      console.error('Error reading players from localStorage:', error);
+      setPlayers(getDefaultPlayers());
+    }
+  }, [tableNumber]);
+
+  // Сохраняем players в localStorage при изменении
+  useEffect(() => {
+    try {
+      const key = `mafia-players-${tableNumber}`;
+      localStorage.setItem(key, JSON.stringify(players));
+    } catch (error) {
+      console.error('Error saving players to localStorage:', error);
+    }
+  }, [players, tableNumber]);
 
   // Load table data when tableNumber changes
   useEffect(() => {
     const loadData = async () => {
       try {
         const data = await loadTableDataFromSheets(parseInt(tableNumber, 10));
-        if (data) {
-          // Update localStorage for players only
-          localStorage.setItem('mafia-players', JSON.stringify(data.players));
+        if (data && data.players) {
+          // Update players from Google Sheets if available
+          setPlayers(data.players);
         }
       } catch (error) {
         console.error('Failed to load table data:', error);
@@ -64,7 +97,7 @@ function App() {
       </header>
       <main className="app-main">
         {activeTab === 'game' && (
-          <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} tableNumber={parseInt(tableNumber, 10)} />
+          <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} players={players} setPlayers={setPlayers} />
         )}
         {activeTab === 'game' && (
           <div className="game-hud">
@@ -118,7 +151,7 @@ function App() {
             )}
           </div>
         )}
-        {activeTab === 'events' && <EventsScreen />}
+        {activeTab === 'events' && <EventsScreen players={players} setPlayers={setPlayers} />}
         {activeTab === 'settings' && (
           <SettingsScreen
             tournamentPlayers={tournamentPlayers}

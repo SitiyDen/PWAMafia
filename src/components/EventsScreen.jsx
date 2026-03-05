@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
+import { useTableNumber } from '../context/TableNumberContext';
 import { resetGameInSheets, updateEventCellInSheets, updatePlayerStateInSheets } from '../api/sheets';
-import { getDefaultPlayers } from '../data/constants';
 import './EventsScreen.css';
 
 // Order required by user
@@ -9,7 +9,7 @@ const ROWS = ['Лучший ход', 'Проверки Дона', 'Провер�
 const ROW_LENGTHS = [3, 7, 7, 7, 7];
 const BEST_MOVE_IDX = 0;
 
-function EventsScreen() {
+function EventsScreen({ players, setPlayers }) {
   const initial = { rows: ROW_LENGTHS.map((len) => Array(len).fill('')) };
   const [events, setEvents] = useLocalStorage('mafia-events', initial);
 
@@ -34,8 +34,7 @@ function EventsScreen() {
 
   const inputRefs = useRef(ROW_LENGTHS.map((len) => Array(len).fill(null)));
 
-  const [players, setPlayers] = useLocalStorage('mafia-players', getDefaultPlayers());
-  const [tableNumber] = useLocalStorage('mafia-table-number', '1');
+  const { tableNumber } = useTableNumber();
 
   const resetGame = () => {
     const ok = window.confirm('Вы уверены что хотите начать новую игру?');

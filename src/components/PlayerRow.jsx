@@ -1,5 +1,6 @@
 import { ROLES, STATES } from '../data/constants';
 import PlayerNameSelect from './PlayerNameSelect';
+import { useTableNumber } from '../context/TableNumberContext';
 import './PlayerTable.css';
 
 import { updatePlayerNameInSheets, updatePlayerRoleInSheets, updatePlayerStateInSheets } from '../api/sheets';
@@ -7,11 +8,12 @@ import { updatePlayerNameInSheets, updatePlayerRoleInSheets, updatePlayerStateIn
 /**
  * Строка с данными одного игрока
  */
-function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, tableNumber = 1, onNameChange, onRoleChange, onStateChange }) {
+function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, onNameChange, onRoleChange, onStateChange }) {
+  const { tableNumber } = useTableNumber();
   const handleNameChange = (nick) => {
     onNameChange(player.id, nick);
     // Update Google Sheets
-    updatePlayerNameInSheets(tableNumber, player.id, nick).catch(
+    updatePlayerNameInSheets(parseInt(tableNumber, 10), player.id, nick).catch(
       (err) => console.error('Failed to update sheets:', err)
     );
   };
@@ -20,7 +22,7 @@ function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, tabl
     const newRole = e.target.value;
     onRoleChange(player.id, newRole);
     // Update Google Sheets
-    updatePlayerRoleInSheets(tableNumber, player.id, newRole).catch(
+    updatePlayerRoleInSheets(parseInt(tableNumber, 10), player.id, newRole).catch(
       (err) => console.error('Failed to update sheets:', err)
     );
   };
@@ -29,7 +31,7 @@ function PlayerRow({ player, tournamentPlayers = [], showRoleColumn = true, tabl
     const newState = e.target.value;
     onStateChange(player.id, newState);
     // Update Google Sheets
-    updatePlayerStateInSheets(tableNumber, player.id, newState).catch(
+    updatePlayerStateInSheets(parseInt(tableNumber, 10), player.id, newState).catch(
       (err) => console.error('Failed to update sheets:', err)
     );
   };

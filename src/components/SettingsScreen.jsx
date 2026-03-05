@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
+import { useTableNumber } from '../context/TableNumberContext';
 import './SettingsScreen.css';
 
 function SettingsScreen({
@@ -8,7 +9,7 @@ function SettingsScreen({
   error = null,
   onRefresh,
 }) {
-  const [tableNumber, setTableNumber] = useLocalStorage('mafia-table-number', '1');
+  const { tableNumber, setTableNumber } = useTableNumber();
   const [useOBS, setUseOBS] = useLocalStorage('mafia-use-obs', 'false');
   const [showTimer, setShowTimer] = useLocalStorage('mafia-show-timer', 'true');
   // OBS websocket address can be configured by the user

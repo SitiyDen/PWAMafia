@@ -1,5 +1,5 @@
 import { useLocalStorage } from '../hooks/useLocalStorage';
-import { getDefaultPlayers } from '../data/constants';
+import { useTableNumber } from '../context/TableNumberContext';
 import PlayerRow from './PlayerRow';
 import './PlayerTable.css';
 import { useEffect } from 'react';
@@ -8,8 +8,8 @@ import { syncShotsAndVotesToSheets } from '../api/sheets';
 /**
  * Таблица игроков с сохранением в localStorage
  */
-function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumber = 1 }) {
-  const [players, setPlayers] = useLocalStorage('mafia-players', getDefaultPlayers());
+function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], players, setPlayers }) {
+  const { tableNumber } = useTableNumber();
   const DEFAULT_EVENTS = { rows: [Array(3).fill(''), Array(7).fill(''), Array(7).fill(''), Array(7).fill(''), Array(7).fill('')] };
   const [events, setEvents] = useLocalStorage('mafia-events', DEFAULT_EVENTS);
 
@@ -42,7 +42,7 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               if (emptyIdx !== -1) shots[emptyIdx] = strId;
             }
             // sync updated shots to sheets
-            syncShotsAndVotesToSheets(tableNumber, shots, copy.rows[4]).catch(err =>
+            syncShotsAndVotesToSheets(parseInt(tableNumber, 10), shots, copy.rows[4]).catch(err =>
               console.error('Failed to sync shots/votes to sheets:', err)
             );
             return copy;
@@ -59,7 +59,7 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               shots[shots.length - 1] = '';
             }
             // sync change
-            syncShotsAndVotesToSheets(tableNumber, shots, copy.rows[4]).catch(err =>
+            syncShotsAndVotesToSheets(parseInt(tableNumber, 10), shots, copy.rows[4]).catch(err =>
               console.error('Failed to sync shots/votes to sheets:', err)
             );
             return copy;
@@ -76,7 +76,7 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               const emptyIdx = votes.findIndex((s) => s === '');
               if (emptyIdx !== -1) votes[emptyIdx] = strId;
             }
-            syncShotsAndVotesToSheets(tableNumber, copy.rows[3], votes).catch(err =>
+            syncShotsAndVotesToSheets(parseInt(tableNumber, 10), copy.rows[3], votes).catch(err =>
               console.error('Failed to sync shots/votes to sheets:', err)
             );
             return copy;
@@ -91,7 +91,7 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
               for (let i = idx; i < votes.length - 1; i++) votes[i] = votes[i + 1];
               votes[votes.length - 1] = '';
             }
-            syncShotsAndVotesToSheets(tableNumber, copy.rows[3], votes).catch(err =>
+            syncShotsAndVotesToSheets(parseInt(tableNumber, 10), copy.rows[3], votes).catch(err =>
               console.error('Failed to sync shots/votes to sheets:', err)
             );
             return copy;
@@ -111,7 +111,6 @@ function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], tableNumbe
           player={player}
           tournamentPlayers={tournamentPlayers}
           showRoleColumn={showRoleColumn}
-          tableNumber={tableNumber}
           onNameChange={handleNameChange}
           onRoleChange={handleRoleChange}
           onStateChange={handleStateChange}
