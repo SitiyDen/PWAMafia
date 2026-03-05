@@ -8,10 +8,8 @@ import { syncShotsAndVotesToSheets } from '../api/sheets';
 /**
  * Таблица игроков с сохранением в localStorage
  */
-function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], players, setPlayers }) {
+function PlayerTable({ showRoleColumn = true, tournamentPlayers = [], players, setPlayers, events, setEvents }) {
   const { tableNumber } = useTableNumber();
-  const DEFAULT_EVENTS = { rows: [Array(3).fill(''), Array(7).fill(''), Array(7).fill(''), Array(7).fill(''), Array(7).fill('')] };
-  const [events, setEvents] = useLocalStorage('mafia-events', DEFAULT_EVENTS);
 
   const updatePlayer = (id, field, value) => {
     setPlayers((prev) =>

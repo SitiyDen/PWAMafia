@@ -21,7 +21,7 @@ function App() {
   const { tournamentPlayers, loading, error, refresh } = useTournamentPlayers();
   
   const [useOBS] = useLocalStorage('mafia-use-obs', 'false');
-  const [showTimer] = useLocalStorage('mafia-show-timer', 'true');
+  const [showTimer] = useLocalStorage('mafia-show-timer', 'false');
   const { tableNumber } = useTableNumber();
   const [players, setPlayers] = useState(() => {
     try {
@@ -135,7 +135,12 @@ function App() {
       </header>
       <main className="app-main">
         {activeTab === 'game' && (
-          <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} players={players} setPlayers={setPlayers} />
+          <PlayerTable showRoleColumn={showRoleColumn} tournamentPlayers={tournamentPlayers} players={players} setPlayers={setPlayers} events={events} setEvents={setEvents} />
+        )}
+        {activeTab === 'game' && timerVisible && (
+          <div className="game-timer-container">
+            <GameTimer />
+          </div>
         )}
         {activeTab === 'game' && (
           <div className="game-hud">
@@ -184,7 +189,7 @@ function App() {
 
             {timerVisible && (
               <div className="game-hud__timer">
-                <GameTimer />
+                {/* Timer moved to global level */}
               </div>
             )}
           </div>
