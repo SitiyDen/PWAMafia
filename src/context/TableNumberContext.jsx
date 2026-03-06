@@ -9,7 +9,11 @@ export function TableNumberProvider({ children }) {
   useEffect(() => {
     try {
       const stored = localStorage.getItem('mafia-table-number');
-      if (stored) setTableNumberState(stored);
+      if (stored && !isNaN(parseInt(stored, 10))) {
+        setTableNumberState(stored);
+      } else {
+        setTableNumberState('1');
+      }
     } catch {
       setTableNumberState('1');
     }
@@ -17,11 +21,14 @@ export function TableNumberProvider({ children }) {
 
   // Сохраняем в localStorage при изменении
   const setTableNumber = (newValue) => {
-    setTableNumberState(newValue);
-    try {
-      localStorage.setItem('mafia-table-number', newValue);
-    } catch (error) {
-      console.error('Error saving table number:', error);
+    const numValue = parseInt(newValue, 10);
+    if (!isNaN(numValue) && numValue > 0) {
+      setTableNumberState(newValue);
+      try {
+        localStorage.setItem('mafia-table-number', newValue);
+      } catch (error) {
+        console.error('Error saving table number:', error);
+      }
     }
   };
 

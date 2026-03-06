@@ -37,17 +37,21 @@
    ```
 2. Скопируйте весь это URL
 
-### Шаг 5: Добавьте URL в приложение
+### Шаг 5: Добавьте URL и ID таблицы в приложение
 
 1. Откройте файл `.env.local` в корне проекта PWA Mafia:
    ```
    /Users/sitiydenis/Documents/PWAMafia/.env.local
    ```
-2. Вставьте скопированный URL:
+2. Добавьте URL Google Apps Script:
    ```
    VITE_APPS_SCRIPT_URL=https://script.google.com/macros/d/YOUR_SCRIPT_ID/usercache
    ```
-3. Сохраните файл
+3. Добавьте ID вашей Google Таблицы (из URL таблицы):
+   ```
+   VITE_GOOGLE_SHEET_ID=YOUR_SHEET_ID
+   ```
+4. Сохраните файл
 
 ### Шаг 6: Настройте структуру Google Sheets
 

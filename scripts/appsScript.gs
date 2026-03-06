@@ -136,6 +136,20 @@ function doPost(e) {
         })
       ).setMimeType(ContentService.MimeType.JSON);
     }
+
+    if (data.action === 'updateGameNumber') {
+      updateGameNumber(
+        data.spreadsheetId,
+        Number(data.tableNumber),
+        data.gameNumber
+      );
+      return ContentService.createTextOutput(
+        JSON.stringify({
+          success: true,
+          message: 'Номер игры обновлен'
+        })
+      ).setMimeType(ContentService.MimeType.JSON);
+    }
     
     return ContentService.createTextOutput(
       JSON.stringify({
@@ -447,6 +461,23 @@ function loadTableData(spreadsheetId, tableNumber) {
   return { players, events };
 }
 
+/**
+ * Обновляет номер игры в Google Sheets (ячейка B14)
+ * @param {string} spreadsheetId ID таблицы
+ * @param {number} tableNumber Номер стола (1, 2, 3...)
+ * @param {string|number} gameNumber Номер игры
+ */
+function updateGameNumber(spreadsheetId, tableNumber, gameNumber) {
+  const spreadsheet = SpreadsheetApp.openById(spreadsheetId);
+  const sheetName = `Стол${tableNumber}`;
+  let sheet = spreadsheet.getSheetByName(sheetName);
+  if (!sheet) {
+    sheet = spreadsheet.insertSheet(sheetName);
+  }
+  
+  // Ячейка B14 для номера игры
+  sheet.getRange('B14').setValue(gameNumber);
+}
 
 /**
  * Для тестирования функций (откройте Applications Script -> Run)

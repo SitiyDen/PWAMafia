@@ -1,6 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { useTableNumber } from '../context/TableNumberContext';
-import { resetGameInSheets, updateEventCellInSheets, updatePlayerStateInSheets } from '../api/sheets';
+import { resetGameInSheets, updateEventCellInSheets, updatePlayerStateInSheets, updateGameNumberInSheets, updatePlayerNameInSheets } from '../api/sheets';
 import { getDefaultPlayers, getDefaultEvents } from '../data/constants';
 import './EventsScreen.css';
 
@@ -9,7 +8,7 @@ const ROWS = ['Лучший ход', 'Проверки Дона', 'Провер�
 const ROW_LENGTHS = [3, 7, 7, 7, 7];
 const BEST_MOVE_IDX = 0;
 
-function EventsScreen({ players, setPlayers, events, setEvents }) {
+function EventsScreen({ players, setPlayers, events, setEvents, gameNumber, setGameNumber, tableNumber, fillPlayersFromData }) {
   // ensure stored shape
   useEffect(() => {
     if (!events || !events.rows || events.rows.length !== ROWS.length) {
@@ -31,8 +30,6 @@ function EventsScreen({ players, setPlayers, events, setEvents }) {
 
   const inputRefs = useRef(ROW_LENGTHS.map((len) => Array(len).fill(null)));
 
-  const { tableNumber } = useTableNumber();
-
   const resetGame = () => {
     const ok = window.confirm('Вы уверены что хотите начать новую игру?');
     if (!ok) return;
@@ -46,6 +43,42 @@ function EventsScreen({ players, setPlayers, events, setEvents }) {
     resetGameInSheets(parseInt(tableNumber, 10)).catch(err =>
       console.error('Failed to reset sheets:', err)
     );
+  };
+
+  const changeGameNumber = (newNumber) => {
+    const ok = window.confirm('Вы уверены что хотите начать новую игру?');
+    if (!ok) return;
+
+    console.log(`Changing game number to ${newNumber} for table ${tableNumber}`);
+
+    // Update game number
+    setGameNumber(newNumber.toString());
+
+    // reset players to defaults
+    setPlayers(getDefaultPlayers());
+    // clear events
+    setEvents(getDefaultEvents());
+
+    // Update game number in sheets
+    updateGameNumberInSheets(parseInt(tableNumber, 10), newNumber).catch(err =>
+      console.error('Failed to update game number in sheets:', err)
+    );
+
+    // reset google sheets if configured
+    resetGameInSheets(parseInt(tableNumber, 10)).catch(err =>
+      console.error('Failed to reset sheets:', err)
+    );
+  };
+
+  const handleGameNumberPrevious = () => {
+    const current = parseInt(gameNumber, 10);
+    if (current > 1) {
+      changeGameNumber(current - 1);
+    }
+  };
+
+  const handleGameNumberNext = () => {
+    changeGameNumber(parseInt(gameNumber, 10) + 1);
   };
 
   const handleChange = (rowIdx, idx, raw) => {
@@ -98,6 +131,53 @@ function EventsScreen({ players, setPlayers, events, setEvents }) {
 
   return (
     <div className="events-screen">
+      <div className="game-number-section">
+        <div className="game-number-controls">
+          <span className="game-number-label">Тур</span>
+          <button 
+            type="button" 
+            className="game-number-btn game-number-btn--prev"
+            onClick={handleGameNumberPrevious}
+            aria-label="Предыдущая игра"
+            title="Предыдущая игра"
+          >
+            ◀
+          </button>
+          <input
+            type="number"
+            min="1"
+            className="game-number-input"
+            value={gameNumber}
+            onChange={(e) => setGameNumber(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                const newNum = parseInt(e.target.value, 10);
+                if (!isNaN(newNum) && newNum > 0) {
+                  changeGameNumber(newNum.toString());
+                }
+              }
+            }}
+            onBlur={(e) => {
+              const newNum = parseInt(e.target.value, 10);
+              if (!isNaN(newNum) && newNum > 0 && newNum.toString() !== gameNumber) {
+                changeGameNumber(newNum.toString());
+              }
+            }}
+            aria-label="Номер игры"
+            title="Введите номер игры"
+          />
+          <button 
+            type="button" 
+            className="game-number-btn game-number-btn--next"
+            onClick={handleGameNumberNext}
+            aria-label="Следующая игра"
+            title="Следующая игра"
+          >
+            ▶
+          </button>
+        </div>
+      </div>
+
       <div className="events-list">
         {ROWS.map((title, rowIdx) => (
           <div className="event-row" key={title}>

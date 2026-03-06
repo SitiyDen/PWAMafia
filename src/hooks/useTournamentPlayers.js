@@ -30,9 +30,7 @@ export function useTournamentPlayers() {
     }
   }, [setTournamentPlayers]);
 
-  useEffect(() => {
-    refreshFromSheets();
-  }, [refreshFromSheets]);
+  // Убрали автоматическую загрузку при монтировании
 
   return {
     tournamentPlayers,

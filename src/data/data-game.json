@@ -1,0 +1,7504 @@
+{
+  "tours": [
+    {
+      "tour": 1,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Tomno"
+            },
+            {
+              "seat": 2,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 3,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 4,
+              "name": "Клюква"
+            },
+            {
+              "seat": 5,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 6,
+              "name": "Аслан"
+            },
+            {
+              "seat": 7,
+              "name": "Дюран"
+            },
+            {
+              "seat": 8,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 9,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 10,
+              "name": "Терра"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Antonio"
+            },
+            {
+              "seat": 2,
+              "name": "23"
+            },
+            {
+              "seat": 3,
+              "name": "Джесс"
+            },
+            {
+              "seat": 4,
+              "name": "Альпач"
+            },
+            {
+              "seat": 5,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 6,
+              "name": "Konnor"
+            },
+            {
+              "seat": 7,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 8,
+              "name": "Давид"
+            },
+            {
+              "seat": 9,
+              "name": "Кэри"
+            },
+            {
+              "seat": 10,
+              "name": "Эд"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "007"
+            },
+            {
+              "seat": 2,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 3,
+              "name": "Castle"
+            },
+            {
+              "seat": 4,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 5,
+              "name": "Градиент"
+            },
+            {
+              "seat": 6,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 7,
+              "name": "Парус"
+            },
+            {
+              "seat": 8,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 9,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 10,
+              "name": "Nigma"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Пyля"
+            },
+            {
+              "seat": 2,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 3,
+              "name": "Mercy"
+            },
+            {
+              "seat": 4,
+              "name": "Стоников"
+            },
+            {
+              "seat": 5,
+              "name": "Никто."
+            },
+            {
+              "seat": 6,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 7,
+              "name": "МARS"
+            },
+            {
+              "seat": 8,
+              "name": "h0wk"
+            },
+            {
+              "seat": 9,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 10,
+              "name": "Псих"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Грозный"
+            },
+            {
+              "seat": 2,
+              "name": "Баунти"
+            },
+            {
+              "seat": 3,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 4,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 5,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 6,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 7,
+              "name": "Мираж"
+            },
+            {
+              "seat": 8,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 9,
+              "name": "Liric"
+            },
+            {
+              "seat": 10,
+              "name": "Амадей"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 2,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 3,
+              "name": "Сандра"
+            },
+            {
+              "seat": 4,
+              "name": "Мэд"
+            },
+            {
+              "seat": 5,
+              "name": "Козерог"
+            },
+            {
+              "seat": 6,
+              "name": "Разгром"
+            },
+            {
+              "seat": 7,
+              "name": "Луи"
+            },
+            {
+              "seat": 8,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 9,
+              "name": "RF32"
+            },
+            {
+              "seat": 10,
+              "name": "Leeroyka"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 2,
+              "name": "Insight"
+            },
+            {
+              "seat": 3,
+              "name": "Кэt"
+            },
+            {
+              "seat": 4,
+              "name": "Гордон"
+            },
+            {
+              "seat": 5,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 6,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 7,
+              "name": "Дипси"
+            },
+            {
+              "seat": 8,
+              "name": "Fade"
+            },
+            {
+              "seat": 9,
+              "name": "Растишка"
+            },
+            {
+              "seat": 10,
+              "name": "Рокси"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "ОД"
+            },
+            {
+              "seat": 2,
+              "name": "Natumba"
+            },
+            {
+              "seat": 3,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 4,
+              "name": "Сто"
+            },
+            {
+              "seat": 5,
+              "name": "NøBest"
+            },
+            {
+              "seat": 6,
+              "name": "Советник_"
+            },
+            {
+              "seat": 7,
+              "name": "55"
+            },
+            {
+              "seat": 8,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 9,
+              "name": "AleVas"
+            },
+            {
+              "seat": 10,
+              "name": "Ледокол"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "MSR"
+            },
+            {
+              "seat": 2,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 3,
+              "name": "Ванна"
+            },
+            {
+              "seat": 4,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 5,
+              "name": "Ультра"
+            },
+            {
+              "seat": 6,
+              "name": "Сима"
+            },
+            {
+              "seat": 7,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 8,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 9,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 10,
+              "name": "Еления Холовна"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 2,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 3,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 4,
+              "name": "Богема"
+            },
+            {
+              "seat": 5,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 6,
+              "name": "Murphy"
+            },
+            {
+              "seat": 7,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 8,
+              "name": "Флай"
+            },
+            {
+              "seat": 9,
+              "name": "А2"
+            },
+            {
+              "seat": 10,
+              "name": "Komorebi"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 2,
+              "name": "44"
+            },
+            {
+              "seat": 3,
+              "name": "Lemona"
+            },
+            {
+              "seat": 4,
+              "name": "Безухов"
+            },
+            {
+              "seat": 5,
+              "name": "Guns"
+            },
+            {
+              "seat": 6,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 7,
+              "name": "Voland"
+            },
+            {
+              "seat": 8,
+              "name": "Жэ"
+            },
+            {
+              "seat": 9,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 10,
+              "name": "Провокация."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 2,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 2,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 3,
+              "name": "NøBest"
+            },
+            {
+              "seat": 4,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 5,
+              "name": "Voland"
+            },
+            {
+              "seat": 6,
+              "name": "Кэt"
+            },
+            {
+              "seat": 7,
+              "name": "007"
+            },
+            {
+              "seat": 8,
+              "name": "МARS"
+            },
+            {
+              "seat": 9,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 10,
+              "name": "MSR"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Козерог"
+            },
+            {
+              "seat": 2,
+              "name": "Грозный"
+            },
+            {
+              "seat": 3,
+              "name": "Стоников"
+            },
+            {
+              "seat": 4,
+              "name": "Градиент"
+            },
+            {
+              "seat": 5,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 6,
+              "name": "Растишка"
+            },
+            {
+              "seat": 7,
+              "name": "Терра"
+            },
+            {
+              "seat": 8,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 9,
+              "name": "ОД"
+            },
+            {
+              "seat": 10,
+              "name": "Флай"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 2,
+              "name": "AleVas"
+            },
+            {
+              "seat": 3,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 4,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 5,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 6,
+              "name": "Альпач"
+            },
+            {
+              "seat": 7,
+              "name": "Рокси"
+            },
+            {
+              "seat": 8,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 9,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 10,
+              "name": "Слепой Часовщик"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Эд"
+            },
+            {
+              "seat": 2,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 3,
+              "name": "Дюран"
+            },
+            {
+              "seat": 4,
+              "name": "Мираж"
+            },
+            {
+              "seat": 5,
+              "name": "Castle"
+            },
+            {
+              "seat": 6,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 7,
+              "name": "Сандра"
+            },
+            {
+              "seat": 8,
+              "name": "Insight"
+            },
+            {
+              "seat": 9,
+              "name": "Сто"
+            },
+            {
+              "seat": 10,
+              "name": "Безухов"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 2,
+              "name": "Провокация."
+            },
+            {
+              "seat": 3,
+              "name": "RF32"
+            },
+            {
+              "seat": 4,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 5,
+              "name": "Парус"
+            },
+            {
+              "seat": 6,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 7,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 8,
+              "name": "Джесс"
+            },
+            {
+              "seat": 9,
+              "name": "Ультра"
+            },
+            {
+              "seat": 10,
+              "name": "55"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 2,
+              "name": "Konnor"
+            },
+            {
+              "seat": 3,
+              "name": "Советник_"
+            },
+            {
+              "seat": 4,
+              "name": "Liric"
+            },
+            {
+              "seat": 5,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 6,
+              "name": "Fade"
+            },
+            {
+              "seat": 7,
+              "name": "Murphy"
+            },
+            {
+              "seat": 8,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 9,
+              "name": "Псих"
+            },
+            {
+              "seat": 10,
+              "name": "Guns"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Lemona"
+            },
+            {
+              "seat": 2,
+              "name": "Давид"
+            },
+            {
+              "seat": 3,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 4,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 5,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 6,
+              "name": "Пyля"
+            },
+            {
+              "seat": 7,
+              "name": "Разгром"
+            },
+            {
+              "seat": 8,
+              "name": "Амадей"
+            },
+            {
+              "seat": 9,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 10,
+              "name": "Bolshania"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "44"
+            },
+            {
+              "seat": 2,
+              "name": "Antonio"
+            },
+            {
+              "seat": 3,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 4,
+              "name": "Луи"
+            },
+            {
+              "seat": 5,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 6,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 7,
+              "name": "Богема"
+            },
+            {
+              "seat": 8,
+              "name": "Никто."
+            },
+            {
+              "seat": 9,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 10,
+              "name": "Ванна"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 2,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 3,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 4,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 5,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 6,
+              "name": "Жэ"
+            },
+            {
+              "seat": 7,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 8,
+              "name": "Клюква"
+            },
+            {
+              "seat": 9,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 10,
+              "name": "Цыпа"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Аслан"
+            },
+            {
+              "seat": 2,
+              "name": "Nigma"
+            },
+            {
+              "seat": 3,
+              "name": "Гордон"
+            },
+            {
+              "seat": 4,
+              "name": "Кэри"
+            },
+            {
+              "seat": 5,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 6,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 7,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 8,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 9,
+              "name": "h0wk"
+            },
+            {
+              "seat": 10,
+              "name": "Мэд"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "23"
+            },
+            {
+              "seat": 2,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 3,
+              "name": "А2"
+            },
+            {
+              "seat": 4,
+              "name": "Дипси"
+            },
+            {
+              "seat": 5,
+              "name": "Natumba"
+            },
+            {
+              "seat": 6,
+              "name": "Tomno"
+            },
+            {
+              "seat": 7,
+              "name": "Сима"
+            },
+            {
+              "seat": 8,
+              "name": "Mercy"
+            },
+            {
+              "seat": 9,
+              "name": "Баунти"
+            },
+            {
+              "seat": 10,
+              "name": "_Leo_"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 3,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ультра"
+            },
+            {
+              "seat": 2,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 3,
+              "name": "Antonio"
+            },
+            {
+              "seat": 4,
+              "name": "Пyля"
+            },
+            {
+              "seat": 5,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 6,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 7,
+              "name": "Мэд"
+            },
+            {
+              "seat": 8,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 9,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 10,
+              "name": "NøBest"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "AleVas"
+            },
+            {
+              "seat": 2,
+              "name": "007"
+            },
+            {
+              "seat": 3,
+              "name": "h0wk"
+            },
+            {
+              "seat": 4,
+              "name": "Сима"
+            },
+            {
+              "seat": 5,
+              "name": "Murphy"
+            },
+            {
+              "seat": 6,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 7,
+              "name": "Кэt"
+            },
+            {
+              "seat": 8,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 9,
+              "name": "Никто."
+            },
+            {
+              "seat": 10,
+              "name": "Мираж"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 2,
+              "name": "Луи"
+            },
+            {
+              "seat": 3,
+              "name": "Дипси"
+            },
+            {
+              "seat": 4,
+              "name": "Guns"
+            },
+            {
+              "seat": 5,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 6,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 7,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 8,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 9,
+              "name": "Эд"
+            },
+            {
+              "seat": 10,
+              "name": "А2"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Давид"
+            },
+            {
+              "seat": 2,
+              "name": "MSR"
+            },
+            {
+              "seat": 3,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 4,
+              "name": "Флай"
+            },
+            {
+              "seat": 5,
+              "name": "Сандра"
+            },
+            {
+              "seat": 6,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 7,
+              "name": "Советник_"
+            },
+            {
+              "seat": 8,
+              "name": "Аслан"
+            },
+            {
+              "seat": 9,
+              "name": "Парус"
+            },
+            {
+              "seat": 10,
+              "name": "Баунти"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 2,
+              "name": "Lemona"
+            },
+            {
+              "seat": 3,
+              "name": "Грозный"
+            },
+            {
+              "seat": 4,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 5,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 6,
+              "name": "Рокси"
+            },
+            {
+              "seat": 7,
+              "name": "23"
+            },
+            {
+              "seat": 8,
+              "name": "Castle"
+            },
+            {
+              "seat": 9,
+              "name": "Богема"
+            },
+            {
+              "seat": 10,
+              "name": "RF32"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Терра"
+            },
+            {
+              "seat": 2,
+              "name": "Кэри"
+            },
+            {
+              "seat": 3,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 4,
+              "name": "Insight"
+            },
+            {
+              "seat": 5,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 6,
+              "name": "Voland"
+            },
+            {
+              "seat": 7,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 8,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 9,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 10,
+              "name": "Разноцвет"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Mercy"
+            },
+            {
+              "seat": 2,
+              "name": "Безухов"
+            },
+            {
+              "seat": 3,
+              "name": "ОД"
+            },
+            {
+              "seat": 4,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 5,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 6,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 7,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 8,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 9,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 10,
+              "name": "Адвокат"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Клюква"
+            },
+            {
+              "seat": 2,
+              "name": "МARS"
+            },
+            {
+              "seat": 3,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 4,
+              "name": "Провокация."
+            },
+            {
+              "seat": 5,
+              "name": "Konnor"
+            },
+            {
+              "seat": 6,
+              "name": "Градиент"
+            },
+            {
+              "seat": 7,
+              "name": "Гордон"
+            },
+            {
+              "seat": 8,
+              "name": "Ванна"
+            },
+            {
+              "seat": 9,
+              "name": "Амадей"
+            },
+            {
+              "seat": 10,
+              "name": "ДаФомин"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Псих"
+            },
+            {
+              "seat": 2,
+              "name": "Растишка"
+            },
+            {
+              "seat": 3,
+              "name": "Жэ"
+            },
+            {
+              "seat": 4,
+              "name": "Nigma"
+            },
+            {
+              "seat": 5,
+              "name": "Джесс"
+            },
+            {
+              "seat": 6,
+              "name": "Natumba"
+            },
+            {
+              "seat": 7,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 8,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 9,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 10,
+              "name": "Дюран"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 2,
+              "name": "Козерог"
+            },
+            {
+              "seat": 3,
+              "name": "Tomno"
+            },
+            {
+              "seat": 4,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 5,
+              "name": "44"
+            },
+            {
+              "seat": 6,
+              "name": "Liric"
+            },
+            {
+              "seat": 7,
+              "name": "Сто"
+            },
+            {
+              "seat": 8,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 9,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 10,
+              "name": "Просто Толя"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 2,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 3,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 4,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 5,
+              "name": "Fade"
+            },
+            {
+              "seat": 6,
+              "name": "Стоников"
+            },
+            {
+              "seat": 7,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 8,
+              "name": "Альпач"
+            },
+            {
+              "seat": 9,
+              "name": "55"
+            },
+            {
+              "seat": 10,
+              "name": "Разгром"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 4,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Стоников"
+            },
+            {
+              "seat": 2,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 3,
+              "name": "MSR"
+            },
+            {
+              "seat": 4,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 5,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 6,
+              "name": "RF32"
+            },
+            {
+              "seat": 7,
+              "name": "Джесс"
+            },
+            {
+              "seat": 8,
+              "name": "А2"
+            },
+            {
+              "seat": 9,
+              "name": "Гордон"
+            },
+            {
+              "seat": 10,
+              "name": "б0р0да"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Дюран"
+            },
+            {
+              "seat": 2,
+              "name": "Mercy"
+            },
+            {
+              "seat": 3,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 4,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 5,
+              "name": "Liric"
+            },
+            {
+              "seat": 6,
+              "name": "Луи"
+            },
+            {
+              "seat": 7,
+              "name": "Флай"
+            },
+            {
+              "seat": 8,
+              "name": "Voland"
+            },
+            {
+              "seat": 9,
+              "name": "Альпач"
+            },
+            {
+              "seat": 10,
+              "name": "Бастурма"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 2,
+              "name": "Кэt"
+            },
+            {
+              "seat": 3,
+              "name": "Козерог"
+            },
+            {
+              "seat": 4,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 5,
+              "name": "Nigma"
+            },
+            {
+              "seat": 6,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 7,
+              "name": "Пyля"
+            },
+            {
+              "seat": 8,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 9,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 10,
+              "name": "Пифагор"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Castle"
+            },
+            {
+              "seat": 2,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 3,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 4,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 5,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 6,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 7,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 8,
+              "name": "Konnor"
+            },
+            {
+              "seat": 9,
+              "name": "Natumba"
+            },
+            {
+              "seat": 10,
+              "name": "Scarlet"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Никто."
+            },
+            {
+              "seat": 2,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 3,
+              "name": "AleVas"
+            },
+            {
+              "seat": 4,
+              "name": "Жэ"
+            },
+            {
+              "seat": 5,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 6,
+              "name": "NøBest"
+            },
+            {
+              "seat": 7,
+              "name": "Баунти"
+            },
+            {
+              "seat": 8,
+              "name": "Эд"
+            },
+            {
+              "seat": 9,
+              "name": "Разгром"
+            },
+            {
+              "seat": 10,
+              "name": "Градиент"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 2,
+              "name": "Клюква"
+            },
+            {
+              "seat": 3,
+              "name": "007"
+            },
+            {
+              "seat": 4,
+              "name": "Fade"
+            },
+            {
+              "seat": 5,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 6,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 7,
+              "name": "Безухов"
+            },
+            {
+              "seat": 8,
+              "name": "Antonio"
+            },
+            {
+              "seat": 9,
+              "name": "Ванна"
+            },
+            {
+              "seat": 10,
+              "name": "Охота Крепкая"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 2,
+              "name": "Мэд"
+            },
+            {
+              "seat": 3,
+              "name": "44"
+            },
+            {
+              "seat": 4,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 5,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 6,
+              "name": "Сто"
+            },
+            {
+              "seat": 7,
+              "name": "Псих"
+            },
+            {
+              "seat": 8,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 9,
+              "name": "23"
+            },
+            {
+              "seat": 10,
+              "name": "Парус"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 2,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 3,
+              "name": "Терра"
+            },
+            {
+              "seat": 4,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 5,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 6,
+              "name": "Дипси"
+            },
+            {
+              "seat": 7,
+              "name": "h0wk"
+            },
+            {
+              "seat": 8,
+              "name": "Провокация."
+            },
+            {
+              "seat": 9,
+              "name": "Сандра"
+            },
+            {
+              "seat": 10,
+              "name": "Богема"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 2,
+              "name": "Tomno"
+            },
+            {
+              "seat": 3,
+              "name": "Кэри"
+            },
+            {
+              "seat": 4,
+              "name": "Грозный"
+            },
+            {
+              "seat": 5,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 6,
+              "name": "55"
+            },
+            {
+              "seat": 7,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 8,
+              "name": "Советник_"
+            },
+            {
+              "seat": 9,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 10,
+              "name": "Lemona"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Рокси"
+            },
+            {
+              "seat": 2,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 3,
+              "name": "Ультра"
+            },
+            {
+              "seat": 4,
+              "name": "МARS"
+            },
+            {
+              "seat": 5,
+              "name": "Растишка"
+            },
+            {
+              "seat": 6,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 7,
+              "name": "ОД"
+            },
+            {
+              "seat": 8,
+              "name": "Мираж"
+            },
+            {
+              "seat": 9,
+              "name": "Guns"
+            },
+            {
+              "seat": 10,
+              "name": "Давид"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 2,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 3,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 4,
+              "name": "Murphy"
+            },
+            {
+              "seat": 5,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 6,
+              "name": "Амадей"
+            },
+            {
+              "seat": 7,
+              "name": "Аслан"
+            },
+            {
+              "seat": 8,
+              "name": "Сима"
+            },
+            {
+              "seat": 9,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 10,
+              "name": "Insight"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 5,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 2,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 3,
+              "name": "Сима"
+            },
+            {
+              "seat": 4,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 5,
+              "name": "Грозный"
+            },
+            {
+              "seat": 6,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 7,
+              "name": "Градиент"
+            },
+            {
+              "seat": 8,
+              "name": "Сто"
+            },
+            {
+              "seat": 9,
+              "name": "Луи"
+            },
+            {
+              "seat": 10,
+              "name": "Fade"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 2,
+              "name": "Гордон"
+            },
+            {
+              "seat": 3,
+              "name": "Альпач"
+            },
+            {
+              "seat": 4,
+              "name": "Lemona"
+            },
+            {
+              "seat": 5,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 6,
+              "name": "Баунти"
+            },
+            {
+              "seat": 7,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 8,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 9,
+              "name": "NøBest"
+            },
+            {
+              "seat": 10,
+              "name": "Castle"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 2,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 3,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 4,
+              "name": "44"
+            },
+            {
+              "seat": 5,
+              "name": "Советник_"
+            },
+            {
+              "seat": 6,
+              "name": "Insight"
+            },
+            {
+              "seat": 7,
+              "name": "Растишка"
+            },
+            {
+              "seat": 8,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 9,
+              "name": "Mercy"
+            },
+            {
+              "seat": 10,
+              "name": "Пyля"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Джесс"
+            },
+            {
+              "seat": 2,
+              "name": "ОД"
+            },
+            {
+              "seat": 3,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 4,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 5,
+              "name": "Богема"
+            },
+            {
+              "seat": 6,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 7,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 8,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 9,
+              "name": "Voland"
+            },
+            {
+              "seat": 10,
+              "name": "Хокаге"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Парус"
+            },
+            {
+              "seat": 2,
+              "name": "h0wk"
+            },
+            {
+              "seat": 3,
+              "name": "Амадей"
+            },
+            {
+              "seat": 4,
+              "name": "Antonio"
+            },
+            {
+              "seat": 5,
+              "name": "Разгром"
+            },
+            {
+              "seat": 6,
+              "name": "Guns"
+            },
+            {
+              "seat": 7,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 8,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 9,
+              "name": "Дюран"
+            },
+            {
+              "seat": 10,
+              "name": "Natumba"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 2,
+              "name": "Аслан"
+            },
+            {
+              "seat": 3,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 4,
+              "name": "Никто."
+            },
+            {
+              "seat": 5,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 6,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 7,
+              "name": "Konnor"
+            },
+            {
+              "seat": 8,
+              "name": "Ультра"
+            },
+            {
+              "seat": 9,
+              "name": "Жэ"
+            },
+            {
+              "seat": 10,
+              "name": "Дипси"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "А2"
+            },
+            {
+              "seat": 2,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 3,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 4,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 5,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 6,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 7,
+              "name": "Провокация."
+            },
+            {
+              "seat": 8,
+              "name": "Кэри"
+            },
+            {
+              "seat": 9,
+              "name": "007"
+            },
+            {
+              "seat": 10,
+              "name": "Сандра"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 2,
+              "name": "Рокси"
+            },
+            {
+              "seat": 3,
+              "name": "Murphy"
+            },
+            {
+              "seat": 4,
+              "name": "Эд"
+            },
+            {
+              "seat": 5,
+              "name": "MSR"
+            },
+            {
+              "seat": 6,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 7,
+              "name": "Tomno"
+            },
+            {
+              "seat": 8,
+              "name": "Безухов"
+            },
+            {
+              "seat": 9,
+              "name": "Nigma"
+            },
+            {
+              "seat": 10,
+              "name": "Мальвина_Garlem"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 2,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 3,
+              "name": "МARS"
+            },
+            {
+              "seat": 4,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 5,
+              "name": "23"
+            },
+            {
+              "seat": 6,
+              "name": "AleVas"
+            },
+            {
+              "seat": 7,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 8,
+              "name": "Козерог"
+            },
+            {
+              "seat": 9,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 10,
+              "name": "plohoy paren"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Мэд"
+            },
+            {
+              "seat": 2,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 3,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 4,
+              "name": "55"
+            },
+            {
+              "seat": 5,
+              "name": "Флай"
+            },
+            {
+              "seat": 6,
+              "name": "Мираж"
+            },
+            {
+              "seat": 7,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 8,
+              "name": "Псих"
+            },
+            {
+              "seat": 9,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 10,
+              "name": "Клюква"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 2,
+              "name": "Liric"
+            },
+            {
+              "seat": 3,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 4,
+              "name": "RF32"
+            },
+            {
+              "seat": 5,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 6,
+              "name": "Давид"
+            },
+            {
+              "seat": 7,
+              "name": "Ванна"
+            },
+            {
+              "seat": 8,
+              "name": "Терра"
+            },
+            {
+              "seat": 9,
+              "name": "Кэt"
+            },
+            {
+              "seat": 10,
+              "name": "Стоников"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 6,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Провокация."
+            },
+            {
+              "seat": 2,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 3,
+              "name": "Мэд"
+            },
+            {
+              "seat": 4,
+              "name": "ОД"
+            },
+            {
+              "seat": 5,
+              "name": "Рокси"
+            },
+            {
+              "seat": 6,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 7,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 8,
+              "name": "Баунти"
+            },
+            {
+              "seat": 9,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 10,
+              "name": "Blokuto"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Разгром"
+            },
+            {
+              "seat": 2,
+              "name": "Пyля"
+            },
+            {
+              "seat": 3,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 4,
+              "name": "Ванна"
+            },
+            {
+              "seat": 5,
+              "name": "Tomno"
+            },
+            {
+              "seat": 6,
+              "name": "Джесс"
+            },
+            {
+              "seat": 7,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 8,
+              "name": "Murphy"
+            },
+            {
+              "seat": 9,
+              "name": "Дипси"
+            },
+            {
+              "seat": 10,
+              "name": "Сто"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 2,
+              "name": "Псих"
+            },
+            {
+              "seat": 3,
+              "name": "Voland"
+            },
+            {
+              "seat": 4,
+              "name": "Сандра"
+            },
+            {
+              "seat": 5,
+              "name": "AleVas"
+            },
+            {
+              "seat": 6,
+              "name": "Грозный"
+            },
+            {
+              "seat": 7,
+              "name": "Nigma"
+            },
+            {
+              "seat": 8,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 9,
+              "name": "Antonio"
+            },
+            {
+              "seat": 10,
+              "name": "Бэнди"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Жэ"
+            },
+            {
+              "seat": 2,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 3,
+              "name": "Мираж"
+            },
+            {
+              "seat": 4,
+              "name": "А2"
+            },
+            {
+              "seat": 5,
+              "name": "Амадей"
+            },
+            {
+              "seat": 6,
+              "name": "Терра"
+            },
+            {
+              "seat": 7,
+              "name": "Fade"
+            },
+            {
+              "seat": 8,
+              "name": "44"
+            },
+            {
+              "seat": 9,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 10,
+              "name": "Альпач"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 2,
+              "name": "Ультра"
+            },
+            {
+              "seat": 3,
+              "name": "Богема"
+            },
+            {
+              "seat": 4,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 5,
+              "name": "Стоников"
+            },
+            {
+              "seat": 6,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 7,
+              "name": "Кэри"
+            },
+            {
+              "seat": 8,
+              "name": "Градиент"
+            },
+            {
+              "seat": 9,
+              "name": "Безухов"
+            },
+            {
+              "seat": 10,
+              "name": "Советник_"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 2,
+              "name": "NøBest"
+            },
+            {
+              "seat": 3,
+              "name": "Аслан"
+            },
+            {
+              "seat": 4,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 5,
+              "name": "007"
+            },
+            {
+              "seat": 6,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 7,
+              "name": "RF32"
+            },
+            {
+              "seat": 8,
+              "name": "Guns"
+            },
+            {
+              "seat": 9,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 10,
+              "name": "Растишка"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 2,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 3,
+              "name": "23"
+            },
+            {
+              "seat": 4,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 5,
+              "name": "h0wk"
+            },
+            {
+              "seat": 6,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 7,
+              "name": "MSR"
+            },
+            {
+              "seat": 8,
+              "name": "Луи"
+            },
+            {
+              "seat": 9,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 10,
+              "name": "Liric"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Гордон"
+            },
+            {
+              "seat": 2,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 3,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 4,
+              "name": "Mercy"
+            },
+            {
+              "seat": 5,
+              "name": "Давид"
+            },
+            {
+              "seat": 6,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 7,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 8,
+              "name": "Дюран"
+            },
+            {
+              "seat": 9,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 10,
+              "name": "Баконэко"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "55"
+            },
+            {
+              "seat": 2,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 3,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 4,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 5,
+              "name": "Insight"
+            },
+            {
+              "seat": 6,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 7,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 8,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 9,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 10,
+              "name": "Konnor"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Флай"
+            },
+            {
+              "seat": 2,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 3,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 4,
+              "name": "Natumba"
+            },
+            {
+              "seat": 5,
+              "name": "Lemona"
+            },
+            {
+              "seat": 6,
+              "name": "МARS"
+            },
+            {
+              "seat": 7,
+              "name": "Эд"
+            },
+            {
+              "seat": 8,
+              "name": "Кэt"
+            },
+            {
+              "seat": 9,
+              "name": "Сима"
+            },
+            {
+              "seat": 10,
+              "name": "Фрукт"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 2,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 3,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 4,
+              "name": "Козерог"
+            },
+            {
+              "seat": 5,
+              "name": "Клюква"
+            },
+            {
+              "seat": 6,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 7,
+              "name": "Castle"
+            },
+            {
+              "seat": 8,
+              "name": "Парус"
+            },
+            {
+              "seat": 9,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 10,
+              "name": "Никто."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 7,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Безухов"
+            },
+            {
+              "seat": 2,
+              "name": "55"
+            },
+            {
+              "seat": 3,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 4,
+              "name": "Кэt"
+            },
+            {
+              "seat": 5,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 6,
+              "name": "h0wk"
+            },
+            {
+              "seat": 7,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 8,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 9,
+              "name": "Давид"
+            },
+            {
+              "seat": 10,
+              "name": "Ferrari"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Сандра"
+            },
+            {
+              "seat": 2,
+              "name": "Градиент"
+            },
+            {
+              "seat": 3,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 4,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 5,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 6,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 7,
+              "name": "44"
+            },
+            {
+              "seat": 8,
+              "name": "Дипси"
+            },
+            {
+              "seat": 9,
+              "name": "Флай"
+            },
+            {
+              "seat": 10,
+              "name": "Ведьмочка"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Natumba"
+            },
+            {
+              "seat": 2,
+              "name": "Джесс"
+            },
+            {
+              "seat": 3,
+              "name": "Insight"
+            },
+            {
+              "seat": 4,
+              "name": "Рокси"
+            },
+            {
+              "seat": 5,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 6,
+              "name": "Никто."
+            },
+            {
+              "seat": 7,
+              "name": "Liric"
+            },
+            {
+              "seat": 8,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 9,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 10,
+              "name": "Chupacabra"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 2,
+              "name": "Жэ"
+            },
+            {
+              "seat": 3,
+              "name": "Провокация."
+            },
+            {
+              "seat": 4,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 5,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 6,
+              "name": "Козерог"
+            },
+            {
+              "seat": 7,
+              "name": "Antonio"
+            },
+            {
+              "seat": 8,
+              "name": "Стоников"
+            },
+            {
+              "seat": 9,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 10,
+              "name": "Murphy"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Сто"
+            },
+            {
+              "seat": 2,
+              "name": "Амадей"
+            },
+            {
+              "seat": 3,
+              "name": "Nigma"
+            },
+            {
+              "seat": 4,
+              "name": "Ультра"
+            },
+            {
+              "seat": 5,
+              "name": "Mercy"
+            },
+            {
+              "seat": 6,
+              "name": "Клюква"
+            },
+            {
+              "seat": 7,
+              "name": "NøBest"
+            },
+            {
+              "seat": 8,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 9,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 10,
+              "name": "Кэри"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Луи"
+            },
+            {
+              "seat": 2,
+              "name": "Терра"
+            },
+            {
+              "seat": 3,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 4,
+              "name": "Парус"
+            },
+            {
+              "seat": 5,
+              "name": "Гордон"
+            },
+            {
+              "seat": 6,
+              "name": "А2"
+            },
+            {
+              "seat": 7,
+              "name": "AleVas"
+            },
+            {
+              "seat": 8,
+              "name": "Lemona"
+            },
+            {
+              "seat": 9,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 10,
+              "name": "VOROBUSHEK"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Богема"
+            },
+            {
+              "seat": 2,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 3,
+              "name": "Fade"
+            },
+            {
+              "seat": 4,
+              "name": "Баунти"
+            },
+            {
+              "seat": 5,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 6,
+              "name": "Дюран"
+            },
+            {
+              "seat": 7,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 8,
+              "name": "Пyля"
+            },
+            {
+              "seat": 9,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 10,
+              "name": "МARS"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Мираж"
+            },
+            {
+              "seat": 2,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 3,
+              "name": "Разгром"
+            },
+            {
+              "seat": 4,
+              "name": "Аслан"
+            },
+            {
+              "seat": 5,
+              "name": "Ванна"
+            },
+            {
+              "seat": 6,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 7,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 8,
+              "name": "23"
+            },
+            {
+              "seat": 9,
+              "name": "Советник_"
+            },
+            {
+              "seat": 10,
+              "name": "Voland"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 2,
+              "name": "RF32"
+            },
+            {
+              "seat": 3,
+              "name": "Псих"
+            },
+            {
+              "seat": 4,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 5,
+              "name": "Эд"
+            },
+            {
+              "seat": 6,
+              "name": "ОД"
+            },
+            {
+              "seat": 7,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 8,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 9,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 10,
+              "name": "007"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 2,
+              "name": "Альпач"
+            },
+            {
+              "seat": 3,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 4,
+              "name": "MSR"
+            },
+            {
+              "seat": 5,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 6,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 7,
+              "name": "Guns"
+            },
+            {
+              "seat": 8,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 9,
+              "name": "Castle"
+            },
+            {
+              "seat": 10,
+              "name": "Грозный"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Konnor"
+            },
+            {
+              "seat": 2,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 3,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 4,
+              "name": "Растишка"
+            },
+            {
+              "seat": 5,
+              "name": "Сима"
+            },
+            {
+              "seat": 6,
+              "name": "Мэд"
+            },
+            {
+              "seat": 7,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 8,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 9,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 10,
+              "name": "Tomno"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 8,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 2,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 3,
+              "name": "Natumba"
+            },
+            {
+              "seat": 4,
+              "name": "Псих"
+            },
+            {
+              "seat": 5,
+              "name": "Терра"
+            },
+            {
+              "seat": 6,
+              "name": "Богема"
+            },
+            {
+              "seat": 7,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 8,
+              "name": "Сандра"
+            },
+            {
+              "seat": 9,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 10,
+              "name": "Смайлик"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Voland"
+            },
+            {
+              "seat": 2,
+              "name": "А2"
+            },
+            {
+              "seat": 3,
+              "name": "Liric"
+            },
+            {
+              "seat": 4,
+              "name": "Рокси"
+            },
+            {
+              "seat": 5,
+              "name": "55"
+            },
+            {
+              "seat": 6,
+              "name": "Castle"
+            },
+            {
+              "seat": 7,
+              "name": "Клюква"
+            },
+            {
+              "seat": 8,
+              "name": "Мэд"
+            },
+            {
+              "seat": 9,
+              "name": "Пyля"
+            },
+            {
+              "seat": 10,
+              "name": "Сима"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 2,
+              "name": "Разгром"
+            },
+            {
+              "seat": 3,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 4,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 5,
+              "name": "Жэ"
+            },
+            {
+              "seat": 6,
+              "name": "Эд"
+            },
+            {
+              "seat": 7,
+              "name": "Ультра"
+            },
+            {
+              "seat": 8,
+              "name": "Грозный"
+            },
+            {
+              "seat": 9,
+              "name": "Tomno"
+            },
+            {
+              "seat": 10,
+              "name": "Гордон"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Кэри"
+            },
+            {
+              "seat": 2,
+              "name": "Парус"
+            },
+            {
+              "seat": 3,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 4,
+              "name": "AleVas"
+            },
+            {
+              "seat": 5,
+              "name": "Кэt"
+            },
+            {
+              "seat": 6,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 7,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 8,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 9,
+              "name": "Insight"
+            },
+            {
+              "seat": 10,
+              "name": "К0см0навт"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 2,
+              "name": "Мираж"
+            },
+            {
+              "seat": 3,
+              "name": "Konnor"
+            },
+            {
+              "seat": 4,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 5,
+              "name": "Дипси"
+            },
+            {
+              "seat": 6,
+              "name": "Mercy"
+            },
+            {
+              "seat": 7,
+              "name": "Lemona"
+            },
+            {
+              "seat": 8,
+              "name": "007"
+            },
+            {
+              "seat": 9,
+              "name": "MSR"
+            },
+            {
+              "seat": 10,
+              "name": "Козерог"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "NøBest"
+            },
+            {
+              "seat": 2,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 3,
+              "name": "Провокация."
+            },
+            {
+              "seat": 4,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 5,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 6,
+              "name": "23"
+            },
+            {
+              "seat": 7,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 8,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 9,
+              "name": "Fade"
+            },
+            {
+              "seat": 10,
+              "name": "Крёстный Отец"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 2,
+              "name": "Murphy"
+            },
+            {
+              "seat": 3,
+              "name": "Guns"
+            },
+            {
+              "seat": 4,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 5,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 6,
+              "name": "Antonio"
+            },
+            {
+              "seat": 7,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 8,
+              "name": "Градиент"
+            },
+            {
+              "seat": 9,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 10,
+              "name": "Аcпид"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Альпач"
+            },
+            {
+              "seat": 2,
+              "name": "Аслан"
+            },
+            {
+              "seat": 3,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 4,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 5,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 6,
+              "name": "Безухов"
+            },
+            {
+              "seat": 7,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 8,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 9,
+              "name": "МARS"
+            },
+            {
+              "seat": 10,
+              "name": "Джесс"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 2,
+              "name": "Флай"
+            },
+            {
+              "seat": 3,
+              "name": "Луи"
+            },
+            {
+              "seat": 4,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 5,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 6,
+              "name": "Nigma"
+            },
+            {
+              "seat": 7,
+              "name": "Никто."
+            },
+            {
+              "seat": 8,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 9,
+              "name": "Давид"
+            },
+            {
+              "seat": 10,
+              "name": "Ариадна"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ванна"
+            },
+            {
+              "seat": 2,
+              "name": "Сто"
+            },
+            {
+              "seat": 3,
+              "name": "Растишка"
+            },
+            {
+              "seat": 4,
+              "name": "h0wk"
+            },
+            {
+              "seat": 5,
+              "name": "Баунти"
+            },
+            {
+              "seat": 6,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 7,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 8,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 9,
+              "name": "Стоников"
+            },
+            {
+              "seat": 10,
+              "name": "Аргентум"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Амадей"
+            },
+            {
+              "seat": 2,
+              "name": "Дюран"
+            },
+            {
+              "seat": 3,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 4,
+              "name": "Советник_"
+            },
+            {
+              "seat": 5,
+              "name": "RF32"
+            },
+            {
+              "seat": 6,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 7,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 8,
+              "name": "ОД"
+            },
+            {
+              "seat": 9,
+              "name": "44"
+            },
+            {
+              "seat": 10,
+              "name": "NiKiYuKi"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 9,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Liric"
+            },
+            {
+              "seat": 2,
+              "name": "Безухов"
+            },
+            {
+              "seat": 3,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 4,
+              "name": "Разгром"
+            },
+            {
+              "seat": 5,
+              "name": "А2"
+            },
+            {
+              "seat": 6,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 7,
+              "name": "Грозный"
+            },
+            {
+              "seat": 8,
+              "name": "NøBest"
+            },
+            {
+              "seat": 9,
+              "name": "Konnor"
+            },
+            {
+              "seat": 10,
+              "name": "Берлускони"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Растишка"
+            },
+            {
+              "seat": 2,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 3,
+              "name": "Никто."
+            },
+            {
+              "seat": 4,
+              "name": "Амадей"
+            },
+            {
+              "seat": 5,
+              "name": "Гордон"
+            },
+            {
+              "seat": 6,
+              "name": "MSR"
+            },
+            {
+              "seat": 7,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 8,
+              "name": "Богема"
+            },
+            {
+              "seat": 9,
+              "name": "Мэд"
+            },
+            {
+              "seat": 10,
+              "name": "Мистер кусака"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Murphy"
+            },
+            {
+              "seat": 2,
+              "name": "Стоников"
+            },
+            {
+              "seat": 3,
+              "name": "Псих"
+            },
+            {
+              "seat": 4,
+              "name": "Джесс"
+            },
+            {
+              "seat": 5,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 6,
+              "name": "007"
+            },
+            {
+              "seat": 7,
+              "name": "Ультра"
+            },
+            {
+              "seat": 8,
+              "name": "Рокси"
+            },
+            {
+              "seat": 9,
+              "name": "Lemona"
+            },
+            {
+              "seat": 10,
+              "name": "44"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Fade"
+            },
+            {
+              "seat": 2,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 3,
+              "name": "Эд"
+            },
+            {
+              "seat": 4,
+              "name": "Voland"
+            },
+            {
+              "seat": 5,
+              "name": "Парус"
+            },
+            {
+              "seat": 6,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 7,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 8,
+              "name": "h0wk"
+            },
+            {
+              "seat": 9,
+              "name": "Клюква"
+            },
+            {
+              "seat": 10,
+              "name": "Оксюморон"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Сима"
+            },
+            {
+              "seat": 2,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 3,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 4,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 5,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 6,
+              "name": "Флай"
+            },
+            {
+              "seat": 7,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 8,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 9,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 10,
+              "name": "23"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Дипси"
+            },
+            {
+              "seat": 2,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 3,
+              "name": "Давид"
+            },
+            {
+              "seat": 4,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 5,
+              "name": "Дюран"
+            },
+            {
+              "seat": 6,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 7,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 8,
+              "name": "AleVas"
+            },
+            {
+              "seat": 9,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 10,
+              "name": "Blizzard"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 2,
+              "name": "Ванна"
+            },
+            {
+              "seat": 3,
+              "name": "55"
+            },
+            {
+              "seat": 4,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 5,
+              "name": "Mercy"
+            },
+            {
+              "seat": 6,
+              "name": "Сандра"
+            },
+            {
+              "seat": 7,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 8,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 9,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 10,
+              "name": "Жэ"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Guns"
+            },
+            {
+              "seat": 2,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 3,
+              "name": "Баунти"
+            },
+            {
+              "seat": 4,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 5,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 6,
+              "name": "Кэри"
+            },
+            {
+              "seat": 7,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 8,
+              "name": "Natumba"
+            },
+            {
+              "seat": 9,
+              "name": "Козерог"
+            },
+            {
+              "seat": 10,
+              "name": "Хокаге"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Градиент"
+            },
+            {
+              "seat": 2,
+              "name": "Пyля"
+            },
+            {
+              "seat": 3,
+              "name": "Сто"
+            },
+            {
+              "seat": 4,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 5,
+              "name": "Аслан"
+            },
+            {
+              "seat": 6,
+              "name": "Мираж"
+            },
+            {
+              "seat": 7,
+              "name": "Альпач"
+            },
+            {
+              "seat": 8,
+              "name": "RF32"
+            },
+            {
+              "seat": 9,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 10,
+              "name": "3.14тон"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Insight"
+            },
+            {
+              "seat": 2,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 3,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 4,
+              "name": "Терра"
+            },
+            {
+              "seat": 5,
+              "name": "Antonio"
+            },
+            {
+              "seat": 6,
+              "name": "МARS"
+            },
+            {
+              "seat": 7,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 8,
+              "name": "Tomno"
+            },
+            {
+              "seat": 9,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 10,
+              "name": "ОД"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Советник_"
+            },
+            {
+              "seat": 2,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 3,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 4,
+              "name": "Castle"
+            },
+            {
+              "seat": 5,
+              "name": "Луи"
+            },
+            {
+              "seat": 6,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 7,
+              "name": "Кэt"
+            },
+            {
+              "seat": 8,
+              "name": "Nigma"
+            },
+            {
+              "seat": 9,
+              "name": "Провокация."
+            },
+            {
+              "seat": 10,
+              "name": "EZY BLACK"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 10,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 2,
+              "name": "Дипси"
+            },
+            {
+              "seat": 3,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 4,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 5,
+              "name": "Псих"
+            },
+            {
+              "seat": 6,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 7,
+              "name": "RF32"
+            },
+            {
+              "seat": 8,
+              "name": "MSR"
+            },
+            {
+              "seat": 9,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 10,
+              "name": "Antonio"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 2,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 3,
+              "name": "Аслан"
+            },
+            {
+              "seat": 4,
+              "name": "AleVas"
+            },
+            {
+              "seat": 5,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 6,
+              "name": "Ванна"
+            },
+            {
+              "seat": 7,
+              "name": "Castle"
+            },
+            {
+              "seat": 8,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 9,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 10,
+              "name": "Ультра"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 2,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 3,
+              "name": "Безухов"
+            },
+            {
+              "seat": 4,
+              "name": "Дюран"
+            },
+            {
+              "seat": 5,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 6,
+              "name": "44"
+            },
+            {
+              "seat": 7,
+              "name": "Konnor"
+            },
+            {
+              "seat": 8,
+              "name": "Разгром"
+            },
+            {
+              "seat": 9,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 10,
+              "name": "h0wk"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Баунти"
+            },
+            {
+              "seat": 2,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 3,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 4,
+              "name": "007"
+            },
+            {
+              "seat": 5,
+              "name": "Растишка"
+            },
+            {
+              "seat": 6,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 7,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 8,
+              "name": "55"
+            },
+            {
+              "seat": 9,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 10,
+              "name": "Ардыльян"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 2,
+              "name": "Voland"
+            },
+            {
+              "seat": 3,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 4,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 5,
+              "name": "Пyля"
+            },
+            {
+              "seat": 6,
+              "name": "Tomno"
+            },
+            {
+              "seat": 7,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 8,
+              "name": "Гордон"
+            },
+            {
+              "seat": 9,
+              "name": "Мираж"
+            },
+            {
+              "seat": 10,
+              "name": "Флай"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "МARS"
+            },
+            {
+              "seat": 2,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 3,
+              "name": "Градиент"
+            },
+            {
+              "seat": 4,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 5,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 6,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 7,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 8,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 9,
+              "name": "Рокси"
+            },
+            {
+              "seat": 10,
+              "name": "Mercy"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Nigma"
+            },
+            {
+              "seat": 2,
+              "name": "Guns"
+            },
+            {
+              "seat": 3,
+              "name": "Клюква"
+            },
+            {
+              "seat": 4,
+              "name": "Терра"
+            },
+            {
+              "seat": 5,
+              "name": "Эд"
+            },
+            {
+              "seat": 6,
+              "name": "Джесс"
+            },
+            {
+              "seat": 7,
+              "name": "Козерог"
+            },
+            {
+              "seat": 8,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 9,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 10,
+              "name": "Советник_"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Грозный"
+            },
+            {
+              "seat": 2,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 3,
+              "name": "Insight"
+            },
+            {
+              "seat": 4,
+              "name": "Давид"
+            },
+            {
+              "seat": 5,
+              "name": "Мэд"
+            },
+            {
+              "seat": 6,
+              "name": "Провокация."
+            },
+            {
+              "seat": 7,
+              "name": "Natumba"
+            },
+            {
+              "seat": 8,
+              "name": "Альпач"
+            },
+            {
+              "seat": 9,
+              "name": "Murphy"
+            },
+            {
+              "seat": 10,
+              "name": "Луи"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "23"
+            },
+            {
+              "seat": 2,
+              "name": "Сандра"
+            },
+            {
+              "seat": 3,
+              "name": "Сто"
+            },
+            {
+              "seat": 4,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 5,
+              "name": "ОД"
+            },
+            {
+              "seat": 6,
+              "name": "Жэ"
+            },
+            {
+              "seat": 7,
+              "name": "А2"
+            },
+            {
+              "seat": 8,
+              "name": "Амадей"
+            },
+            {
+              "seat": 9,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 10,
+              "name": "Кэt"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Fade"
+            },
+            {
+              "seat": 2,
+              "name": "Никто."
+            },
+            {
+              "seat": 3,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 4,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 5,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 6,
+              "name": "Lemona"
+            },
+            {
+              "seat": 7,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 8,
+              "name": "Liric"
+            },
+            {
+              "seat": 9,
+              "name": "Кэри"
+            },
+            {
+              "seat": 10,
+              "name": "Гробовщик"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Стоников"
+            },
+            {
+              "seat": 2,
+              "name": "Богема"
+            },
+            {
+              "seat": 3,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 4,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 5,
+              "name": "NøBest"
+            },
+            {
+              "seat": 6,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 7,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 8,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 9,
+              "name": "Парус"
+            },
+            {
+              "seat": 10,
+              "name": "Сима"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 11,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "h0wk"
+            },
+            {
+              "seat": 2,
+              "name": "MSR"
+            },
+            {
+              "seat": 3,
+              "name": "Ванна"
+            },
+            {
+              "seat": 4,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 5,
+              "name": "Альпач"
+            },
+            {
+              "seat": 6,
+              "name": "Козерог"
+            },
+            {
+              "seat": 7,
+              "name": "Insight"
+            },
+            {
+              "seat": 8,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 9,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 10,
+              "name": "Lemona"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 2,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 3,
+              "name": "Парус"
+            },
+            {
+              "seat": 4,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 5,
+              "name": "Советник_"
+            },
+            {
+              "seat": 6,
+              "name": "Псих"
+            },
+            {
+              "seat": 7,
+              "name": "Жэ"
+            },
+            {
+              "seat": 8,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 9,
+              "name": "Грозный"
+            },
+            {
+              "seat": 10,
+              "name": "Рокси"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 2,
+              "name": "Эд"
+            },
+            {
+              "seat": 3,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 4,
+              "name": "NøBest"
+            },
+            {
+              "seat": 5,
+              "name": "Сандра"
+            },
+            {
+              "seat": 6,
+              "name": "Растишка"
+            },
+            {
+              "seat": 7,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 8,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 9,
+              "name": "Fade"
+            },
+            {
+              "seat": 10,
+              "name": "Blokuto"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Liric"
+            },
+            {
+              "seat": 2,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 3,
+              "name": "Пyля"
+            },
+            {
+              "seat": 4,
+              "name": "Дипси"
+            },
+            {
+              "seat": 5,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 6,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 7,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 8,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 9,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 10,
+              "name": "Аслан"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "55"
+            },
+            {
+              "seat": 2,
+              "name": "Nigma"
+            },
+            {
+              "seat": 3,
+              "name": "44"
+            },
+            {
+              "seat": 4,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 5,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 6,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 7,
+              "name": "Гордон"
+            },
+            {
+              "seat": 8,
+              "name": "Natumba"
+            },
+            {
+              "seat": 9,
+              "name": "Терра"
+            },
+            {
+              "seat": 10,
+              "name": "Мистикор"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Antonio"
+            },
+            {
+              "seat": 2,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 3,
+              "name": "Флай"
+            },
+            {
+              "seat": 4,
+              "name": "Безухов"
+            },
+            {
+              "seat": 5,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 6,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 7,
+              "name": "Mercy"
+            },
+            {
+              "seat": 8,
+              "name": "Баунти"
+            },
+            {
+              "seat": 9,
+              "name": "Джесс"
+            },
+            {
+              "seat": 10,
+              "name": "Амадей"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 2,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 3,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 4,
+              "name": "Konnor"
+            },
+            {
+              "seat": 5,
+              "name": "Сто"
+            },
+            {
+              "seat": 6,
+              "name": "А2"
+            },
+            {
+              "seat": 7,
+              "name": "Давид"
+            },
+            {
+              "seat": 8,
+              "name": "Никто."
+            },
+            {
+              "seat": 9,
+              "name": "Voland"
+            },
+            {
+              "seat": 10,
+              "name": "Разноцвет"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "RF32"
+            },
+            {
+              "seat": 2,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 3,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 4,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 5,
+              "name": "МARS"
+            },
+            {
+              "seat": 6,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 7,
+              "name": "Клюква"
+            },
+            {
+              "seat": 8,
+              "name": "Кэри"
+            },
+            {
+              "seat": 9,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 10,
+              "name": "Murphy"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 2,
+              "name": "Castle"
+            },
+            {
+              "seat": 3,
+              "name": "Стоников"
+            },
+            {
+              "seat": 4,
+              "name": "Tomno"
+            },
+            {
+              "seat": 5,
+              "name": "Мираж"
+            },
+            {
+              "seat": 6,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 7,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 8,
+              "name": "Guns"
+            },
+            {
+              "seat": 9,
+              "name": "Луи"
+            },
+            {
+              "seat": 10,
+              "name": "AleVas"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Кэt"
+            },
+            {
+              "seat": 2,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 3,
+              "name": "Дюран"
+            },
+            {
+              "seat": 4,
+              "name": "23"
+            },
+            {
+              "seat": 5,
+              "name": "Богема"
+            },
+            {
+              "seat": 6,
+              "name": "Ультра"
+            },
+            {
+              "seat": 7,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 8,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 9,
+              "name": "Градиент"
+            },
+            {
+              "seat": 10,
+              "name": "Мэд"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Разгром"
+            },
+            {
+              "seat": 2,
+              "name": "Сима"
+            },
+            {
+              "seat": 3,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 4,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 5,
+              "name": "Провокация."
+            },
+            {
+              "seat": 6,
+              "name": "ОД"
+            },
+            {
+              "seat": 7,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 8,
+              "name": "007"
+            },
+            {
+              "seat": 9,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 10,
+              "name": "Аделаида"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 12,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 2,
+              "name": "Fade"
+            },
+            {
+              "seat": 3,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 4,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 5,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 6,
+              "name": "RF32"
+            },
+            {
+              "seat": 7,
+              "name": "Жэ"
+            },
+            {
+              "seat": 8,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 9,
+              "name": "Insight"
+            },
+            {
+              "seat": 10,
+              "name": "К0см0навт"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Терра"
+            },
+            {
+              "seat": 2,
+              "name": "Грозный"
+            },
+            {
+              "seat": 3,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 4,
+              "name": "Пyля"
+            },
+            {
+              "seat": 5,
+              "name": "Безухов"
+            },
+            {
+              "seat": 6,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 7,
+              "name": "МARS"
+            },
+            {
+              "seat": 8,
+              "name": "23"
+            },
+            {
+              "seat": 9,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 10,
+              "name": "007"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Баунти"
+            },
+            {
+              "seat": 2,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 3,
+              "name": "Альпач"
+            },
+            {
+              "seat": 4,
+              "name": "Козерог"
+            },
+            {
+              "seat": 5,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 6,
+              "name": "Гордон"
+            },
+            {
+              "seat": 7,
+              "name": "Сима"
+            },
+            {
+              "seat": 8,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 9,
+              "name": "Аслан"
+            },
+            {
+              "seat": 10,
+              "name": "Псих"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 2,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 3,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 4,
+              "name": "Tomno"
+            },
+            {
+              "seat": 5,
+              "name": "Никто."
+            },
+            {
+              "seat": 6,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 7,
+              "name": "Амадей"
+            },
+            {
+              "seat": 8,
+              "name": "Сандра"
+            },
+            {
+              "seat": 9,
+              "name": "Lemona"
+            },
+            {
+              "seat": 10,
+              "name": "Guns"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Клюква"
+            },
+            {
+              "seat": 2,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 3,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 4,
+              "name": "Мэд"
+            },
+            {
+              "seat": 5,
+              "name": "Давид"
+            },
+            {
+              "seat": 6,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 7,
+              "name": "Стоников"
+            },
+            {
+              "seat": 8,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 9,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 10,
+              "name": "Мальвина_Garlem"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 2,
+              "name": "Voland"
+            },
+            {
+              "seat": 3,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 4,
+              "name": "Castle"
+            },
+            {
+              "seat": 5,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 6,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 7,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 8,
+              "name": "Растишка"
+            },
+            {
+              "seat": 9,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 10,
+              "name": "Баконэко"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 2,
+              "name": "Провокация."
+            },
+            {
+              "seat": 3,
+              "name": "Рокси"
+            },
+            {
+              "seat": 4,
+              "name": "Сто"
+            },
+            {
+              "seat": 5,
+              "name": "Antonio"
+            },
+            {
+              "seat": 6,
+              "name": "Богема"
+            },
+            {
+              "seat": 7,
+              "name": "AleVas"
+            },
+            {
+              "seat": 8,
+              "name": "Флай"
+            },
+            {
+              "seat": 9,
+              "name": "Mercy"
+            },
+            {
+              "seat": 10,
+              "name": "Эд"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "ОД"
+            },
+            {
+              "seat": 2,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 3,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 4,
+              "name": "Liric"
+            },
+            {
+              "seat": 5,
+              "name": "Кэри"
+            },
+            {
+              "seat": 6,
+              "name": "Nigma"
+            },
+            {
+              "seat": 7,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 8,
+              "name": "Разгром"
+            },
+            {
+              "seat": 9,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 10,
+              "name": "Цыпа"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "А2"
+            },
+            {
+              "seat": 2,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 3,
+              "name": "Murphy"
+            },
+            {
+              "seat": 4,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 5,
+              "name": "Ультра"
+            },
+            {
+              "seat": 6,
+              "name": "Парус"
+            },
+            {
+              "seat": 7,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 8,
+              "name": "Ванна"
+            },
+            {
+              "seat": 9,
+              "name": "Дюран"
+            },
+            {
+              "seat": 10,
+              "name": "55"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 2,
+              "name": "Советник_"
+            },
+            {
+              "seat": 3,
+              "name": "Луи"
+            },
+            {
+              "seat": 4,
+              "name": "NøBest"
+            },
+            {
+              "seat": 5,
+              "name": "Konnor"
+            },
+            {
+              "seat": 6,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 7,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 8,
+              "name": "Джесс"
+            },
+            {
+              "seat": 9,
+              "name": "h0wk"
+            },
+            {
+              "seat": 10,
+              "name": "Дипси"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Мираж"
+            },
+            {
+              "seat": 2,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 3,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 4,
+              "name": "Natumba"
+            },
+            {
+              "seat": 5,
+              "name": "44"
+            },
+            {
+              "seat": 6,
+              "name": "MSR"
+            },
+            {
+              "seat": 7,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 8,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 9,
+              "name": "Градиент"
+            },
+            {
+              "seat": 10,
+              "name": "Кэt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 13,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Никто."
+            },
+            {
+              "seat": 2,
+              "name": "Разгром"
+            },
+            {
+              "seat": 3,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 4,
+              "name": "MSR"
+            },
+            {
+              "seat": 5,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 6,
+              "name": "Терра"
+            },
+            {
+              "seat": 7,
+              "name": "Mercy"
+            },
+            {
+              "seat": 8,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 9,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 10,
+              "name": "Аргентум"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 2,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 3,
+              "name": "23"
+            },
+            {
+              "seat": 4,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 5,
+              "name": "Insight"
+            },
+            {
+              "seat": 6,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 7,
+              "name": "NøBest"
+            },
+            {
+              "seat": 8,
+              "name": "Tomno"
+            },
+            {
+              "seat": 9,
+              "name": "RF32"
+            },
+            {
+              "seat": 10,
+              "name": "Nigma"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 2,
+              "name": "AleVas"
+            },
+            {
+              "seat": 3,
+              "name": "Грозный"
+            },
+            {
+              "seat": 4,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 5,
+              "name": "Клюква"
+            },
+            {
+              "seat": 6,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 7,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 8,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 9,
+              "name": "44"
+            },
+            {
+              "seat": 10,
+              "name": "Ариадна"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Guns"
+            },
+            {
+              "seat": 2,
+              "name": "Ультра"
+            },
+            {
+              "seat": 3,
+              "name": "Гордон"
+            },
+            {
+              "seat": 4,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 5,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 6,
+              "name": "h0wk"
+            },
+            {
+              "seat": 7,
+              "name": "Liric"
+            },
+            {
+              "seat": 8,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 9,
+              "name": "Флай"
+            },
+            {
+              "seat": 10,
+              "name": "Castle"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Lemona"
+            },
+            {
+              "seat": 2,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 3,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 4,
+              "name": "Эд"
+            },
+            {
+              "seat": 5,
+              "name": "ОД"
+            },
+            {
+              "seat": 6,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 7,
+              "name": "Луи"
+            },
+            {
+              "seat": 8,
+              "name": "Аслан"
+            },
+            {
+              "seat": 9,
+              "name": "55"
+            },
+            {
+              "seat": 10,
+              "name": "Градиент"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Растишка"
+            },
+            {
+              "seat": 2,
+              "name": "Парус"
+            },
+            {
+              "seat": 3,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 4,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 5,
+              "name": "Провокация."
+            },
+            {
+              "seat": 6,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 7,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 8,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 9,
+              "name": "Джесс"
+            },
+            {
+              "seat": 10,
+              "name": "Мираж"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Murphy"
+            },
+            {
+              "seat": 2,
+              "name": "Natumba"
+            },
+            {
+              "seat": 3,
+              "name": "Давид"
+            },
+            {
+              "seat": 4,
+              "name": "Voland"
+            },
+            {
+              "seat": 5,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 6,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 7,
+              "name": "Козерог"
+            },
+            {
+              "seat": 8,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 9,
+              "name": "Безухов"
+            },
+            {
+              "seat": 10,
+              "name": "Fade"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Рокси"
+            },
+            {
+              "seat": 2,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 3,
+              "name": "А2"
+            },
+            {
+              "seat": 4,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 5,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 6,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 7,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 8,
+              "name": "Кэt"
+            },
+            {
+              "seat": 9,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 10,
+              "name": "Дюран"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Сто"
+            },
+            {
+              "seat": 2,
+              "name": "Antonio"
+            },
+            {
+              "seat": 3,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 4,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 5,
+              "name": "МARS"
+            },
+            {
+              "seat": 6,
+              "name": "Советник_"
+            },
+            {
+              "seat": 7,
+              "name": "Дипси"
+            },
+            {
+              "seat": 8,
+              "name": "Мэд"
+            },
+            {
+              "seat": 9,
+              "name": "Жэ"
+            },
+            {
+              "seat": 10,
+              "name": "EZY BLACK"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ванна"
+            },
+            {
+              "seat": 2,
+              "name": "Амадей"
+            },
+            {
+              "seat": 3,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 4,
+              "name": "007"
+            },
+            {
+              "seat": 5,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 6,
+              "name": "Альпач"
+            },
+            {
+              "seat": 7,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 8,
+              "name": "Псих"
+            },
+            {
+              "seat": 9,
+              "name": "Богема"
+            },
+            {
+              "seat": 10,
+              "name": "Фрукт"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Konnor"
+            },
+            {
+              "seat": 2,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 3,
+              "name": "Баунти"
+            },
+            {
+              "seat": 4,
+              "name": "Кэри"
+            },
+            {
+              "seat": 5,
+              "name": "Сима"
+            },
+            {
+              "seat": 6,
+              "name": "Сандра"
+            },
+            {
+              "seat": 7,
+              "name": "Пyля"
+            },
+            {
+              "seat": 8,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 9,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 10,
+              "name": "Стоников"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 14,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Советник_"
+            },
+            {
+              "seat": 2,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 3,
+              "name": "Мираж"
+            },
+            {
+              "seat": 4,
+              "name": "Lemona"
+            },
+            {
+              "seat": 5,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 6,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 7,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 8,
+              "name": "Liric"
+            },
+            {
+              "seat": 9,
+              "name": "Сандра"
+            },
+            {
+              "seat": 10,
+              "name": "Chupacabra"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Natumba"
+            },
+            {
+              "seat": 2,
+              "name": "Сто"
+            },
+            {
+              "seat": 3,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 4,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 5,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 6,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 7,
+              "name": "Insight"
+            },
+            {
+              "seat": 8,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 9,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 10,
+              "name": "Blizzard"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Жэ"
+            },
+            {
+              "seat": 2,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 3,
+              "name": "MSR"
+            },
+            {
+              "seat": 4,
+              "name": "Ванна"
+            },
+            {
+              "seat": 5,
+              "name": "Дюран"
+            },
+            {
+              "seat": 6,
+              "name": "Флай"
+            },
+            {
+              "seat": 7,
+              "name": "Кэри"
+            },
+            {
+              "seat": 8,
+              "name": "ОД"
+            },
+            {
+              "seat": 9,
+              "name": "NøBest"
+            },
+            {
+              "seat": 10,
+              "name": "Tomno"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Сима"
+            },
+            {
+              "seat": 2,
+              "name": "Козерог"
+            },
+            {
+              "seat": 3,
+              "name": "Безухов"
+            },
+            {
+              "seat": 4,
+              "name": "Antonio"
+            },
+            {
+              "seat": 5,
+              "name": "RF32"
+            },
+            {
+              "seat": 6,
+              "name": "Градиент"
+            },
+            {
+              "seat": 7,
+              "name": "Разгром"
+            },
+            {
+              "seat": 8,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 9,
+              "name": "Scarlet"
+            },
+            {
+              "seat": 10,
+              "name": "Растишка"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 2,
+              "name": "Клюква"
+            },
+            {
+              "seat": 3,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 4,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 5,
+              "name": "Murphy"
+            },
+            {
+              "seat": 6,
+              "name": "Konnor"
+            },
+            {
+              "seat": 7,
+              "name": "Богема"
+            },
+            {
+              "seat": 8,
+              "name": "Слепой Часовщик"
+            },
+            {
+              "seat": 9,
+              "name": "Кэt"
+            },
+            {
+              "seat": 10,
+              "name": "Bolshania"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Voland"
+            },
+            {
+              "seat": 2,
+              "name": "Альпач"
+            },
+            {
+              "seat": 3,
+              "name": "Nigma"
+            },
+            {
+              "seat": 4,
+              "name": "Парус"
+            },
+            {
+              "seat": 5,
+              "name": "Дипси"
+            },
+            {
+              "seat": 6,
+              "name": "Провокация."
+            },
+            {
+              "seat": 7,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 8,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 9,
+              "name": "МARS"
+            },
+            {
+              "seat": 10,
+              "name": "Ледокол"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 2,
+              "name": "23"
+            },
+            {
+              "seat": 3,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 4,
+              "name": "Fade"
+            },
+            {
+              "seat": 5,
+              "name": "Баунти"
+            },
+            {
+              "seat": 6,
+              "name": "Ультра"
+            },
+            {
+              "seat": 7,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 8,
+              "name": "Луи"
+            },
+            {
+              "seat": 9,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 10,
+              "name": "AleVas"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 2,
+              "name": "Гордон"
+            },
+            {
+              "seat": 3,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 4,
+              "name": "Грозный"
+            },
+            {
+              "seat": 5,
+              "name": "Стоников"
+            },
+            {
+              "seat": 6,
+              "name": "Guns"
+            },
+            {
+              "seat": 7,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 8,
+              "name": "55"
+            },
+            {
+              "seat": 9,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 10,
+              "name": "Просто Толя"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Эд"
+            },
+            {
+              "seat": 2,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 3,
+              "name": "Мэд"
+            },
+            {
+              "seat": 4,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 5,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 6,
+              "name": "44"
+            },
+            {
+              "seat": 7,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 8,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 9,
+              "name": "007"
+            },
+            {
+              "seat": 10,
+              "name": "Никто."
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Амадей"
+            },
+            {
+              "seat": 2,
+              "name": "Терра"
+            },
+            {
+              "seat": 3,
+              "name": "Рокси"
+            },
+            {
+              "seat": 4,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 5,
+              "name": "Джесс"
+            },
+            {
+              "seat": 6,
+              "name": "Мистикор"
+            },
+            {
+              "seat": 7,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 8,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 9,
+              "name": "Мистер кусака"
+            },
+            {
+              "seat": 10,
+              "name": "Пyля"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 2,
+              "name": "Mercy"
+            },
+            {
+              "seat": 3,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 4,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 5,
+              "name": "Псих"
+            },
+            {
+              "seat": 6,
+              "name": "Castle"
+            },
+            {
+              "seat": 7,
+              "name": "h0wk"
+            },
+            {
+              "seat": 8,
+              "name": "А2"
+            },
+            {
+              "seat": 9,
+              "name": "Аслан"
+            },
+            {
+              "seat": 10,
+              "name": "Давид"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tour": 15,
+      "tables": [
+        {
+          "table": 1,
+          "players": [
+            {
+              "seat": 1,
+              "name": "AleVas"
+            },
+            {
+              "seat": 2,
+              "name": "Пифагор"
+            },
+            {
+              "seat": 3,
+              "name": "Растишка"
+            },
+            {
+              "seat": 4,
+              "name": "Хокаге"
+            },
+            {
+              "seat": 5,
+              "name": "Бэнди"
+            },
+            {
+              "seat": 6,
+              "name": "Кэри"
+            },
+            {
+              "seat": 7,
+              "name": "Еления Холовна"
+            },
+            {
+              "seat": 8,
+              "name": "Дипси"
+            },
+            {
+              "seat": 9,
+              "name": "Оксюморон"
+            },
+            {
+              "seat": 10,
+              "name": "Мистикор"
+            }
+          ]
+        },
+        {
+          "table": 2,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Гордон"
+            },
+            {
+              "seat": 2,
+              "name": "Дюран"
+            },
+            {
+              "seat": 3,
+              "name": "Разноцвет"
+            },
+            {
+              "seat": 4,
+              "name": "Луи"
+            },
+            {
+              "seat": 5,
+              "name": "Leeroyka"
+            },
+            {
+              "seat": 6,
+              "name": "Murphy"
+            },
+            {
+              "seat": 7,
+              "name": "007"
+            },
+            {
+              "seat": 8,
+              "name": "Bolshania"
+            },
+            {
+              "seat": 9,
+              "name": "Аргентум"
+            },
+            {
+              "seat": 10,
+              "name": "Аcпид"
+            }
+          ]
+        },
+        {
+          "table": 3,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Цыпа"
+            },
+            {
+              "seat": 2,
+              "name": "55"
+            },
+            {
+              "seat": 3,
+              "name": "Охота Крепкая"
+            },
+            {
+              "seat": 4,
+              "name": "Ледокол"
+            },
+            {
+              "seat": 5,
+              "name": "Фрукт"
+            },
+            {
+              "seat": 6,
+              "name": "Баунти"
+            },
+            {
+              "seat": 7,
+              "name": "Терра"
+            },
+            {
+              "seat": 8,
+              "name": "Давид"
+            },
+            {
+              "seat": 9,
+              "name": "3.14тон"
+            },
+            {
+              "seat": 10,
+              "name": "RF32"
+            }
+          ]
+        },
+        {
+          "table": 4,
+          "players": [
+            {
+              "seat": 1,
+              "name": "б0р0да"
+            },
+            {
+              "seat": 2,
+              "name": "ОД"
+            },
+            {
+              "seat": 3,
+              "name": "МARS"
+            },
+            {
+              "seat": 4,
+              "name": "44"
+            },
+            {
+              "seat": 5,
+              "name": "Nigma"
+            },
+            {
+              "seat": 6,
+              "name": "plohoy paren"
+            },
+            {
+              "seat": 7,
+              "name": "Ардыльян"
+            },
+            {
+              "seat": 8,
+              "name": "Сима"
+            },
+            {
+              "seat": 9,
+              "name": "Ванна"
+            },
+            {
+              "seat": 10,
+              "name": "h0wk"
+            }
+          ]
+        },
+        {
+          "table": 5,
+          "players": [
+            {
+              "seat": 1,
+              "name": "EZY BLACK"
+            },
+            {
+              "seat": 2,
+              "name": "Ариадна"
+            },
+            {
+              "seat": 3,
+              "name": "Амадей"
+            },
+            {
+              "seat": 4,
+              "name": "Провокация."
+            },
+            {
+              "seat": 5,
+              "name": "Гробовщик"
+            },
+            {
+              "seat": 6,
+              "name": "Эд"
+            },
+            {
+              "seat": 7,
+              "name": "Никто."
+            },
+            {
+              "seat": 8,
+              "name": "Баконэко"
+            },
+            {
+              "seat": 9,
+              "name": "Псих"
+            },
+            {
+              "seat": 10,
+              "name": "23"
+            }
+          ]
+        },
+        {
+          "table": 6,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Альпач"
+            },
+            {
+              "seat": 2,
+              "name": "Сандра"
+            },
+            {
+              "seat": 3,
+              "name": "Natumba"
+            },
+            {
+              "seat": 4,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 5,
+              "name": "Пyля"
+            },
+            {
+              "seat": 6,
+              "name": "Разгром"
+            },
+            {
+              "seat": 7,
+              "name": "Советник_"
+            },
+            {
+              "seat": 8,
+              "name": "MSR"
+            },
+            {
+              "seat": 9,
+              "name": "Ультра"
+            },
+            {
+              "seat": 10,
+              "name": "Клюква"
+            }
+          ]
+        },
+        {
+          "table": 7,
+          "players": [
+            {
+              "seat": 1,
+              "name": "_Leo_"
+            },
+            {
+              "seat": 2,
+              "name": "Адвокат"
+            },
+            {
+              "seat": 3,
+              "name": "Джесс"
+            },
+            {
+              "seat": 4,
+              "name": "Blizzard"
+            },
+            {
+              "seat": 5,
+              "name": "Кэt"
+            },
+            {
+              "seat": 6,
+              "name": "Берлускони"
+            },
+            {
+              "seat": 7,
+              "name": "Флай"
+            },
+            {
+              "seat": 8,
+              "name": "Castle"
+            },
+            {
+              "seat": 9,
+              "name": "Мальвина_Garlem"
+            },
+            {
+              "seat": 10,
+              "name": "NøBest"
+            }
+          ]
+        },
+        {
+          "table": 8,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Tomno"
+            },
+            {
+              "seat": 2,
+              "name": "Fade"
+            },
+            {
+              "seat": 3,
+              "name": "ДаФомин"
+            },
+            {
+              "seat": 4,
+              "name": "Аслан"
+            },
+            {
+              "seat": 5,
+              "name": "Грозный"
+            },
+            {
+              "seat": 6,
+              "name": "Мэд"
+            },
+            {
+              "seat": 7,
+              "name": "Chupacabra"
+            },
+            {
+              "seat": 8,
+              "name": "Mercy"
+            },
+            {
+              "seat": 9,
+              "name": "Козерог"
+            },
+            {
+              "seat": 10,
+              "name": "Парус"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Komorebi"
+            },
+            {
+              "seat": 2,
+              "name": "Guns"
+            },
+            {
+              "seat": 3,
+              "name": "Voland"
+            },
+            {
+              "seat": 4,
+              "name": "Ведьмочка"
+            },
+            {
+              "seat": 5,
+              "name": "Бастурма"
+            },
+            {
+              "seat": 6,
+              "name": "Ferrari"
+            },
+            {
+              "seat": 7,
+              "name": "Градиент"
+            },
+            {
+              "seat": 8,
+              "name": "VOROBUSHEK"
+            },
+            {
+              "seat": 9,
+              "name": "Рокси"
+            },
+            {
+              "seat": 10,
+              "name": "Слепой Часовщик"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Богема"
+            },
+            {
+              "seat": 2,
+              "name": "Liric"
+            },
+            {
+              "seat": 3,
+              "name": "Жэ"
+            },
+            {
+              "seat": 4,
+              "name": "Blokuto"
+            },
+            {
+              "seat": 5,
+              "name": "Аделаида"
+            },
+            {
+              "seat": 6,
+              "name": "Antonio"
+            },
+            {
+              "seat": 7,
+              "name": "Мираж"
+            },
+            {
+              "seat": 8,
+              "name": "Insight"
+            },
+            {
+              "seat": 9,
+              "name": "Konnor"
+            },
+            {
+              "seat": 10,
+              "name": "Мистер кусака"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Безухов"
+            },
+            {
+              "seat": 2,
+              "name": "К0см0навт"
+            },
+            {
+              "seat": 3,
+              "name": "Lemona"
+            },
+            {
+              "seat": 4,
+              "name": "Стоников"
+            },
+            {
+              "seat": 5,
+              "name": "Сто"
+            },
+            {
+              "seat": 6,
+              "name": "Смайлик"
+            },
+            {
+              "seat": 7,
+              "name": "Крёстный Отец"
+            },
+            {
+              "seat": 8,
+              "name": "NiKiYuKi"
+            },
+            {
+              "seat": 9,
+              "name": "А2"
+            },
+            {
+              "seat": 10,
+              "name": "Scarlet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

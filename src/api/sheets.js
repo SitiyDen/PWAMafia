@@ -3,7 +3,7 @@
  * Таблица должна быть доступна по ссылке (Anyone with the link can view)
  */
 
-const SHEET_ID = '1NLKHHpv4zLpLar6qguEFE_Zo9dt2sJDmQrpo4wVB-Vg';
+const SHEET_ID = import.meta.env.VITE_GOOGLE_SHEET_ID || '1NLKHHpv4zLpLar6qguEFE_Zo9dt2sJDmQrpo4wVB-Vg';
 const GID = '1484302407'; // Страница "Игроки"
 
 const EXPORT_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
@@ -289,6 +289,39 @@ export async function updateEventCellInSheets(tableNumber, rowIdx, cellIdx, valu
     }
   } catch (error) {
     console.error('Ошибка подключения к Google Apps Script при updateEventCell:', error);
+  }
+}
+
+/**
+ * Обновляет номер игры в Google Sheets (ячейка B14)
+ * @param {number} tableNumber Номер стола
+ * @param {string|number} gameNumber Номер игры
+ */
+export async function updateGameNumberInSheets(tableNumber, gameNumber) {
+  const appsScriptUrl = import.meta.env.VITE_APPS_SCRIPT_URL;
+  if (!appsScriptUrl) {
+    console.warn('VITE_APPS_SCRIPT_URL не настроен. Обновление Google Sheets отключено.');
+    return;
+  }
+
+  try {
+    const response = await fetch(appsScriptUrl, {
+      method: 'POST',
+      body: new URLSearchParams({
+        action: 'updateGameNumber',
+        tableNumber: tableNumber.toString(),
+        gameNumber: gameNumber.toString(),
+        spreadsheetId: SHEET_ID,
+      }),
+    });
+
+    if (!response.ok) {
+      console.error(`Ошибка обновления номера игры: ${response.status}`);
+    } else {
+      console.log(`Номер игры обновлен: стол ${tableNumber}, игра ${gameNumber}`);
+    }
+  } catch (error) {
+    console.error('Ошибка подключения к Google Apps Script при updateGameNumber:', error);
   }
 }
 
