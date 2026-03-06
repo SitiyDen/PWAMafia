@@ -12,6 +12,7 @@ import { getDefaultPlayers, getDefaultEvents } from './data/constants';
 import gameData from './data/data-game.json';
 import { updatePlayerNameInSheets } from './api/sheets';
 import logoPS from './assets/logoPS.png';
+import { findBestMatch } from 'string-similarity';
 import './App.css';
 
 function App() {
@@ -130,23 +131,28 @@ function App() {
     }
 
     const newPlayers = getDefaultPlayers();
+    const tournamentNames = tournamentPlayers;
+
     table.players.forEach(player => {
       if (player.seat >= 1 && player.seat <= 10) {
-        newPlayers[player.seat - 1].name = player.name;
-      }
-    });
+        let playerName = player.name;
+        if (tournamentNames.length > 0) {
+          const match = findBestMatch(player.name, tournamentNames);
+          if (match.bestMatch.rating > 0.6) {
+            playerName = match.bestMatch.target;
+          }
+        }
+        newPlayers[player.seat - 1].name = playerName;
 
-    setPlayers(newPlayers);
-
-    // Обновляем имена в Google Sheets
-    table.players.forEach(player => {
-      if (player.seat >= 1 && player.seat <= 10) {
-        updatePlayerNameInSheets(tableNum, player.seat, player.name).catch(err =>
+        // Обновляем имена в Google Sheets
+        updatePlayerNameInSheets(tableNum, player.seat, playerName).catch(err =>
           console.error('Failed to update player name in sheets:', err)
         );
       }
     });
-  }, [gameNumber, tableNumber, setPlayers]);
+
+    setPlayers(newPlayers);
+  }, [gameNumber, tableNumber, setPlayers, tournamentPlayers]);
 
   // Load table data when tableNumber or gameNumber changes (but not on initial load)
   useEffect(() => {
