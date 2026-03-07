@@ -2188,15 +2188,15 @@
           "players": [
             {
               "seat": 1,
-              "name": "Лахесис"
+              "name": "Банкир"
             },
             {
               "seat": 2,
-              "name": "Parad0x"
+              "name": "Баунти"
             },
             {
               "seat": 3,
-              "name": "ОД"
+              "name": "Катерина"
             },
             {
               "seat": 4,
@@ -2204,19 +2204,19 @@
             },
             {
               "seat": 5,
-              "name": "Дюран"
+              "name": "L.e.x."
             },
             {
               "seat": 6,
-              "name": "Droid"
+              "name": "Икра"
             },
             {
               "seat": 7,
-              "name": "Morgan"
+              "name": "Нелли"
             },
             {
               "seat": 8,
-              "name": "Чаплин"
+              "name": "fj"
             },
             {
               "seat": 9,
@@ -2224,7 +2224,7 @@
             },
             {
               "seat": 10,
-              "name": "Икра"
+              "name": "Cyberpunk"
             }
           ]
         },
@@ -2233,19 +2233,19 @@
           "players": [
             {
               "seat": 1,
-              "name": "Mmirazzh"
+              "name": "BWDMoscow"
             },
             {
               "seat": 2,
-              "name": "Тихий Закат"
+              "name": "Incognitо"
             },
             {
               "seat": 3,
-              "name": "13_"
+              "name": "Mmirazzh"
             },
             {
               "seat": 4,
-              "name": "BWDMoscow"
+              "name": "Аделаида"
             },
             {
               "seat": 5,
@@ -2253,15 +2253,15 @@
             },
             {
               "seat": 6,
-              "name": "Рождество"
-            },
-            {
-              "seat": 7,
               "name": "Оксюморон"
             },
             {
+              "seat": 7,
+              "name": "Еления Холовна"
+            },
+            {
               "seat": 8,
-              "name": "Аделаида"
+              "name": "Охота Крепкая"
             },
             {
               "seat": 9,
@@ -2278,43 +2278,43 @@
           "players": [
             {
               "seat": 1,
-              "name": "Чёрный Ящик"
+              "name": "Лахесис"
             },
             {
               "seat": 2,
-              "name": "_Leo_"
+              "name": "Scarlet"
             },
             {
               "seat": 3,
-              "name": "007"
-            },
-            {
-              "seat": 4,
-              "name": "Еления Холовна"
-            },
-            {
-              "seat": 5,
               "name": "Смайлик"
             },
             {
+              "seat": 4,
+              "name": "Дипси"
+            },
+            {
+              "seat": 5,
+              "name": "Дюран"
+            },
+            {
               "seat": 6,
-              "name": "Незабудочная"
+              "name": "Рождество"
             },
             {
               "seat": 7,
-              "name": "Нимфа."
+              "name": "Чёрная вдова"
             },
             {
               "seat": 8,
-              "name": "Охота Крепкая"
+              "name": "Интерстеллар"
             },
             {
               "seat": 9,
-              "name": "Мэд"
+              "name": "Разноцвет"
             },
             {
               "seat": 10,
-              "name": "L.e.x."
+              "name": "Кабанус"
             }
           ]
         },
@@ -2323,19 +2323,19 @@
           "players": [
             {
               "seat": 1,
-              "name": "РусКор"
+              "name": "Чёрный Ящик"
             },
             {
               "seat": 2,
-              "name": ".ЗагадкА."
+              "name": "Корифей"
             },
             {
               "seat": 3,
-              "name": "Вакси"
+              "name": "Цыпа"
             },
             {
               "seat": 4,
-              "name": "Катерина"
+              "name": "Рокси"
             },
             {
               "seat": 5,
@@ -2343,7 +2343,7 @@
             },
             {
               "seat": 6,
-              "name": "Ультра"
+              "name": "Незабудочная"
             },
             {
               "seat": 7,
@@ -2351,15 +2351,15 @@
             },
             {
               "seat": 8,
-              "name": "Исkра"
+              "name": "Бренди"
             },
             {
               "seat": 9,
-              "name": "Incognitо"
+              "name": "Вакси"
             },
             {
               "seat": 10,
-              "name": "Джонни G"
+              "name": "Красотка"
             }
           ]
         },
@@ -2368,150 +2368,15 @@
           "players": [
             {
               "seat": 1,
-              "name": "Интерстеллар"
+              "name": "РусКор"
             },
             {
               "seat": 2,
-              "name": "Баунти"
-            },
-            {
-              "seat": 3,
-              "name": "Kuroedik"
-            },
-            {
-              "seat": 4,
-              "name": "Рокси"
-            },
-            {
-              "seat": 5,
               "name": "Парадокс"
             },
             {
-              "seat": 6,
-              "name": "Keparik"
-            },
-            {
-              "seat": 7,
-              "name": "Бренди"
-            },
-            {
-              "seat": 8,
-              "name": "fj"
-            },
-            {
-              "seat": 9,
-              "name": "Нелли"
-            },
-            {
-              "seat": 10,
-              "name": "Cyberpunk"
-            }
-          ]
-        },
-        {
-          "table": 6,
-          "players": [
-            {
-              "seat": 1,
-              "name": "ВМТ"
-            },
-            {
-              "seat": 2,
-              "name": "Bas"
-            },
-            {
               "seat": 3,
-              "name": "Шейх"
-            },
-            {
-              "seat": 4,
-              "name": "Maneky"
-            },
-            {
-              "seat": 5,
-              "name": "Kev"
-            },
-            {
-              "seat": 6,
-              "name": "Дерзкий"
-            },
-            {
-              "seat": 7,
-              "name": "Банкир"
-            },
-            {
-              "seat": 8,
-              "name": "Antonio"
-            },
-            {
-              "seat": 9,
-              "name": "Аcпид"
-            },
-            {
-              "seat": 10,
-              "name": "ба"
-            }
-          ]
-        },
-        {
-          "table": 7,
-          "players": [
-            {
-              "seat": 1,
-              "name": "Konnor"
-            },
-            {
-              "seat": 2,
-              "name": "Телепат"
-            },
-            {
-              "seat": 3,
-              "name": "Цыпа"
-            },
-            {
-              "seat": 4,
-              "name": "Воробушек"
-            },
-            {
-              "seat": 5,
-              "name": "МARS"
-            },
-            {
-              "seat": 6,
-              "name": "Karl"
-            },
-            {
-              "seat": 7,
-              "name": "MC"
-            },
-            {
-              "seat": 8,
-              "name": "EvgeN"
-            },
-            {
-              "seat": 9,
-              "name": "smd"
-            },
-            {
-              "seat": 10,
-              "name": "Марфа"
-            }
-          ]
-        },
-        {
-          "table": 8,
-          "players": [
-            {
-              "seat": 1,
-              "name": "Че"
-            },
-            {
-              "seat": 2,
-              "name": "Милкис"
-            },
-            {
-              "seat": 3,
-              "name": "JocK"
+              "name": "Растишка"
             },
             {
               "seat": 4,
@@ -2519,15 +2384,15 @@
             },
             {
               "seat": 5,
-              "name": "Редкая"
+              "name": "б0р0да"
             },
             {
               "seat": 6,
-              "name": "Просто Толя"
+              "name": "Droid"
             },
             {
               "seat": 7,
-              "name": "Бикоро"
+              "name": "Че"
             },
             {
               "seat": 8,
@@ -2535,7 +2400,7 @@
             },
             {
               "seat": 9,
-              "name": "Game over"
+              "name": "Keparik"
             },
             {
               "seat": 10,
@@ -2544,68 +2409,23 @@
           ]
         },
         {
-          "table": 9,
+          "table": 6,
           "players": [
             {
               "seat": 1,
-              "name": "Peru"
+              "name": "Настасья Филипповна"
             },
             {
               "seat": 2,
-              "name": "Икигай"
+              "name": "_Leo_"
             },
             {
               "seat": 3,
-              "name": "Растишка"
+              "name": "Пятница."
             },
             {
               "seat": 4,
-              "name": "Пифагор"
-            },
-            {
-              "seat": 5,
-              "name": "б0р0да"
-            },
-            {
-              "seat": 6,
-              "name": "Козерог"
-            },
-            {
-              "seat": 7,
-              "name": "Djazz"
-            },
-            {
-              "seat": 8,
-              "name": "Sith"
-            },
-            {
-              "seat": 9,
-              "name": "Эд"
-            },
-            {
-              "seat": 10,
-              "name": "Loki"
-            }
-          ]
-        },
-        {
-          "table": 10,
-          "players": [
-            {
-              "seat": 1,
-              "name": "Томас Гордон"
-            },
-            {
-              "seat": 2,
-              "name": "Феномен"
-            },
-            {
-              "seat": 3,
-              "name": "_Darina_"
-            },
-            {
-              "seat": 4,
-              "name": "Дипси"
+              "name": "Воробушек"
             },
             {
               "seat": 5,
@@ -2617,69 +2437,69 @@
             },
             {
               "seat": 7,
-              "name": "Ватикан"
+              "name": "Марфа"
             },
             {
               "seat": 8,
-              "name": "Жгутик"
+              "name": "_Darina_"
             },
             {
               "seat": 9,
-              "name": "Разноцвет"
+              "name": "Феномен"
             },
             {
               "seat": 10,
-              "name": "Настасья Филипповна"
+              "name": "Жгутик"
             }
           ]
         },
         {
-          "table": 11,
+          "table": 7,
           "players": [
             {
               "seat": 1,
-              "name": "Диспетчер"
+              "name": "Томас Гордон"
             },
             {
               "seat": 2,
-              "name": "Корифей"
+              "name": "Konnor"
             },
             {
               "seat": 3,
-              "name": "Пятница."
+              "name": "Karl"
             },
             {
               "seat": 4,
-              "name": "механика"
+              "name": "Morgan"
             },
             {
               "seat": 5,
-              "name": "Колобок"
+              "name": "Редкая"
             },
             {
               "seat": 6,
-              "name": "Scarlet"
+              "name": "Нимфа."
             },
             {
               "seat": 7,
-              "name": "TrixterТрикстер"
+              "name": "MC"
             },
             {
               "seat": 8,
-              "name": "Парус"
+              "name": "007"
             },
             {
               "seat": 9,
-              "name": "_Крокодильчик_"
+              "name": "smd"
             },
             {
               "seat": 10,
-              "name": "Красотка"
+              "name": "Бикоро"
             }
           ]
         },
         {
-          "table": 12,
+          "table": 8,
           "players": [
             {
               "seat": 1,
@@ -2691,7 +2511,7 @@
             },
             {
               "seat": 3,
-              "name": "Кабанус"
+              "name": "Соколъ"
             },
             {
               "seat": 4,
@@ -2699,27 +2519,207 @@
             },
             {
               "seat": 5,
+              "name": "Исkра"
+            },
+            {
+              "seat": 6,
+              "name": "Просто Толя"
+            },
+            {
+              "seat": 7,
+              "name": ".ЗагадкА."
+            },
+            {
+              "seat": 8,
+              "name": "Мэд"
+            },
+            {
+              "seat": 9,
+              "name": "Сону"
+            },
+            {
+              "seat": 10,
+              "name": "Джонни G"
+            }
+          ]
+        },
+        {
+          "table": 9,
+          "players": [
+            {
+              "seat": 1,
+              "name": "EvgeN"
+            },
+            {
+              "seat": 2,
+              "name": "TrixterТрикстер"
+            },
+            {
+              "seat": 3,
+              "name": "Djazz"
+            },
+            {
+              "seat": 4,
+              "name": "механика"
+            },
+            {
+              "seat": 5,
+              "name": "Колобок"
+            },
+            {
+              "seat": 6,
+              "name": "Аcпид"
+            },
+            {
+              "seat": 7,
+              "name": "Ватикан"
+            },
+            {
+              "seat": 8,
+              "name": "МARS"
+            },
+            {
+              "seat": 9,
+              "name": "Эд"
+            },
+            {
+              "seat": 10,
+              "name": "Пифагор"
+            }
+          ]
+        },
+        {
+          "table": 10,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Antonio"
+            },
+            {
+              "seat": 2,
+              "name": "ба"
+            },
+            {
+              "seat": 3,
+              "name": "Шейх"
+            },
+            {
+              "seat": 4,
+              "name": "Телепат"
+            },
+            {
+              "seat": 5,
               "name": "ARES"
             },
             {
               "seat": 6,
-              "name": "Алеут"
+              "name": "Kev"
             },
             {
               "seat": 7,
-              "name": "Чёрная вдова"
+              "name": "Милкис"
             },
             {
               "seat": 8,
-              "name": "Сону"
+              "name": "Парус"
             },
             {
               "seat": 9,
-              "name": "В процессе"
+              "name": "_Крокодильчик_"
             },
             {
               "seat": 10,
-              "name": "Соколъ"
+              "name": "Дерзкий"
+            }
+          ]
+        },
+        {
+          "table": 11,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Peru"
+            },
+            {
+              "seat": 2,
+              "name": "13_"
+            },
+            {
+              "seat": 3,
+              "name": "ОД"
+            },
+            {
+              "seat": 4,
+              "name": "Икигай"
+            },
+            {
+              "seat": 5,
+              "name": "Ультра"
+            },
+            {
+              "seat": 6,
+              "name": "Козерог"
+            },
+            {
+              "seat": 7,
+              "name": "Тихий Закат"
+            },
+            {
+              "seat": 8,
+              "name": "Чаплин"
+            },
+            {
+              "seat": 9,
+              "name": "Sith"
+            },
+            {
+              "seat": 10,
+              "name": "Loki"
+            }
+          ]
+        },
+        {
+          "table": 12,
+          "players": [
+            {
+              "seat": 1,
+              "name": "Алеут"
+            },
+            {
+              "seat": 2,
+              "name": "Bas"
+            },
+            {
+              "seat": 3,
+              "name": "Kuroedik"
+            },
+            {
+              "seat": 4,
+              "name": "Maneky"
+            },
+            {
+              "seat": 5,
+              "name": "В процессе"
+            },
+            {
+              "seat": 6,
+              "name": "Parad0x"
+            },
+            {
+              "seat": 7,
+              "name": "Game over"
+            },
+            {
+              "seat": 8,
+              "name": "Диспетчер"
+            },
+            {
+              "seat": 9,
+              "name": "ВМТ"
+            },
+            {
+              "seat": 10,
+              "name": "JocK"
             }
           ]
         }
