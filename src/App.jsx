@@ -7,6 +7,7 @@ import SettingsScreen from './components/SettingsScreen';
 import { useTournamentPlayers } from './hooks/useTournamentPlayers';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import { useTableNumber } from './context/TableNumberContext';
+import { useOBSContext } from './context/OBSContext';
 import { loadTableDataFromSheets } from './api/sheets';
 import { getDefaultPlayers, getDefaultEvents } from './data/constants';
 import gameData from './data/data-game.json';
@@ -18,11 +19,10 @@ import './App.css';
 function App() {
   const [activeTab, setActiveTab] = useState('game');
   const [showRoleColumn, setShowRoleColumn] = useState(false);
-  const [soundOn, setSoundOn] = useState(true);
   const { tournamentPlayers, loading, error, refresh } = useTournamentPlayers();
-  
-  const [useOBS] = useLocalStorage('mafia-use-obs', 'false');
+
   const [showTimer] = useLocalStorage('mafia-show-timer', 'true');
+  const { obsEnabled, currentScene, scene1Name, scene2Name, switchScene, isMuted, toggleMute } = useOBSContext();
   const { tableNumber } = useTableNumber();
   const isInitialLoad = useRef(true);
   const [gameNumber, setGameNumber] = useState(() => {
@@ -53,7 +53,6 @@ function App() {
     }
   });
   
-  const obsEnabled = useOBS === 'true';
   const timerVisible = showTimer === 'true';
 
   // Синхронизируем players с localStorage каждый раз при смене стола
@@ -225,22 +224,42 @@ function App() {
           <div className="game-hud">
             {obsEnabled && (
               <div className="game-hud__controls">
-                {/* sound buttons mirror scene switch style */}
-                <div className="sound-switch">
+                <div className="game-hud__group">
+                  <div className="scene-label">Сцена:</div>
+                  <div className="scene-toggle">
+                    <button
+                      type="button"
+                      className={`scene-btn ${currentScene === scene1Name ? 'active' : ''}`}
+                      onClick={() => switchScene(scene1Name)}
+                      aria-label={`Переключить на ${scene1Name}`}
+                    >
+                      {scene1Name}
+                    </button>
+                    <button
+                      type="button"
+                      className={`scene-btn ${currentScene === scene2Name ? 'active' : ''}`}
+                      onClick={() => switchScene(scene2Name)}
+                      aria-label={`Переключить на ${scene2Name}`}
+                    >
+                      {scene2Name}
+                    </button>
+                  </div>
+                </div>
+                <div className="game-hud__group">
                   <div className="scene-label">Звук:</div>
                   <div className="scene-toggle">
                     <button
                       type="button"
-                      className={`scene-btn ${soundOn ? 'active' : ''}`}
-                      onClick={() => setSoundOn(true)}
+                      className={`scene-btn ${!isMuted ? 'active' : ''}`}
+                      onClick={() => { if (isMuted) toggleMute(); }}
                       aria-label="Включить звук"
                     >
                       Вкл
                     </button>
                     <button
                       type="button"
-                      className={`scene-btn ${!soundOn ? 'active' : ''}`}
-                      onClick={() => setSoundOn(false)}
+                      className={`scene-btn ${isMuted ? 'active' : ''}`}
+                      onClick={() => { if (!isMuted) toggleMute(); }}
                       aria-label="Выключить звук"
                     >
                       Выкл

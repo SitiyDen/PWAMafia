@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { useTableNumber } from '../context/TableNumberContext';
+import { useOBSContext } from '../context/OBSContext';
 import './SettingsScreen.css';
 
 function SettingsScreen({
@@ -10,161 +11,48 @@ function SettingsScreen({
   onRefresh,
 }) {
   const { tableNumber, setTableNumber } = useTableNumber();
-  const [useOBS, setUseOBS] = useLocalStorage('mafia-use-obs', 'false');
   const [showTimer, setShowTimer] = useLocalStorage('mafia-show-timer', 'true');
-  // OBS websocket address can be configured by the user
-  const [obsAddress, setObsAddress] = useLocalStorage(
-    'mafia-obs-address',
-    'wss://192.168.0.174:4455'
-  );
 
-  const [obsStatus, setObsStatus] = useState('disconnected');
-  const [isMuted, setIsMuted] = useState(false);
+  const {
+    obsEnabled,
+    setObsEnabled,
+    obsAddress,
+    setObsAddress,
+    obsStatus,
+    isMuted,
+    toggleMute,
+    currentScene,
+    scene1Name,
+    setScene1Name,
+    scene2Name,
+    setScene2Name,
+    sourceName,
+    setSourceName,
+    switchScene,
+  } = useOBSContext();
 
-  const socketRef = useRef(null);
-  const identifiedRef = useRef(false);
-
-  const OBS_PASSWORD = '123456';
-  const SOURCE_NAME = 'Захват входного аудиопотока'; // <-- имя источника в OBS
+  // Локальный буфер поля адреса: применяем в контекст только по потере фокуса,
+  // чтобы не переподключаться к OBS на каждое нажатие клавиши при вводе.
+  const [addressDraft, setAddressDraft] = useState(obsAddress);
+  useEffect(() => {
+    setAddressDraft(obsAddress);
+  }, [obsAddress]);
 
   const handleTableNumberChange = (e) => {
     setTableNumber(e.target.value);
   };
 
   const toggleOBS = () => {
-    setUseOBS((v) => (v === 'true' ? 'false' : 'true'));
+    setObsEnabled(!obsEnabled);
   };
 
   const toggleTimer = () => {
     setShowTimer((v) => (v === 'true' ? 'false' : 'true'));
   };
 
-  const handleObsAddressChange = (e) => {
-    setObsAddress(e.target.value);
+  const commitAddress = () => {
+    setObsAddress(addressDraft);
   };
-
-  // ==========================
-  // Подключение к OBS
-  // ==========================
-  useEffect(() => {
-    if (useOBS !== 'true') {
-      disconnectOBS();
-      return;
-    }
-
-    connectOBS();
-
-    return () => {
-      disconnectOBS();
-    };
-  }, [useOBS]);
-
-  function connectOBS() {
-    // use the configured websocket address
-    const socket = new WebSocket(obsAddress);
-    socketRef.current = socket;
-
-    socket.onopen = () => {
-      setObsStatus('connecting');
-    };
-
-    socket.onmessage = async (event) => {
-      const message = JSON.parse(event.data);
-
-      // Hello
-      if (message.op === 0) {
-        const auth = message.d.authentication;
-
-        if (auth) {
-          const response = await generateAuth(
-            OBS_PASSWORD,
-            auth.salt,
-            auth.challenge
-          );
-
-          socket.send(
-            JSON.stringify({
-              op: 1,
-              d: {
-                rpcVersion: 1,
-                authentication: response,
-              },
-            })
-          );
-        } else {
-          socket.send(
-            JSON.stringify({
-              op: 1,
-              d: { rpcVersion: 1 },
-            })
-          );
-        }
-      }
-
-      // Identified
-      if (message.op === 2) {
-        identifiedRef.current = true;
-        setObsStatus('connected');
-      }
-    };
-
-    socket.onerror = () => {
-      setObsStatus('error');
-    };
-
-    socket.onclose = () => {
-      identifiedRef.current = false;
-      setObsStatus('disconnected');
-    };
-  }
-
-  function disconnectOBS() {
-    if (socketRef.current) {
-      socketRef.current.close();
-      socketRef.current = null;
-    }
-  }
-
-  async function generateAuth(password, salt, challenge) {
-    const encoder = new TextEncoder();
-
-    const secret = await crypto.subtle.digest(
-      'SHA-256',
-      encoder.encode(password + salt)
-    );
-
-    const secretBase64 = btoa(
-      String.fromCharCode(...new Uint8Array(secret))
-    );
-
-    const auth = await crypto.subtle.digest(
-      'SHA-256',
-      encoder.encode(secretBase64 + challenge)
-    );
-
-    return btoa(String.fromCharCode(...new Uint8Array(auth)));
-  }
-
-  function toggleMute() {
-    if (!identifiedRef.current) return;
-
-    const newState = !isMuted;
-    setIsMuted(newState);
-
-    socketRef.current.send(
-      JSON.stringify({
-        op: 6,
-        d: {
-          requestType: 'SetInputMute',
-          requestId: 'toggleMute',
-          requestData: {
-            inputName: SOURCE_NAME,
-            inputMuted: newState,
-          },
-        },
-      })
-    );
-  }
 
   return (
     <div className="settings-screen">
@@ -189,26 +77,83 @@ function SettingsScreen({
         <label className="settings-screen__option">
           <input
             type="checkbox"
-            checked={useOBS === 'true'}
+            checked={obsEnabled}
             onChange={toggleOBS}
           />
           <span>Использовать OBS</span>
         </label>
 
-        {useOBS === 'true' && (
+        {obsEnabled && (
           <div style={{ marginLeft: 20 }}>
             <div className="settings-screen__obs-address">
               <label>
                 Адрес OBS WebSocket:
                 <input
                   type="text"
-                  value={obsAddress}
-                  onChange={handleObsAddressChange}
+                  value={addressDraft}
+                  onChange={(e) => setAddressDraft(e.target.value)}
+                  onBlur={commitAddress}
+                  onKeyDown={(e) => { if (e.key === 'Enter') { e.target.blur(); } }}
                   className="settings-screen__input"
                 />
               </label>
             </div>
             <p>Статус OBS: {obsStatus}</p>
+
+            <div className="settings-screen__field">
+              <label className="settings-screen__field-label">
+                Название сцены 1 (как в OBS):
+                <input
+                  type="text"
+                  value={scene1Name}
+                  onChange={(e) => setScene1Name(e.target.value)}
+                  className="settings-screen__input"
+                />
+              </label>
+            </div>
+            <div className="settings-screen__field">
+              <label className="settings-screen__field-label">
+                Название сцены 2 (как в OBS):
+                <input
+                  type="text"
+                  value={scene2Name}
+                  onChange={(e) => setScene2Name(e.target.value)}
+                  className="settings-screen__input"
+                />
+              </label>
+            </div>
+            <div className="settings-screen__field">
+              <label className="settings-screen__field-label">
+                Название источника звука (как в OBS):
+                <input
+                  type="text"
+                  value={sourceName}
+                  onChange={(e) => setSourceName(e.target.value)}
+                  className="settings-screen__input"
+                />
+              </label>
+            </div>
+
+            <div className="sound-switch">
+              <div className="scene-label">Сцена: {currentScene || '—'}</div>
+              <div className="scene-toggle">
+                <button
+                  type="button"
+                  className={`scene-btn ${currentScene === scene1Name ? 'active' : ''}`}
+                  onClick={() => switchScene(scene1Name)}
+                >
+                  {scene1Name}
+                </button>
+                <button
+                  type="button"
+                  className={`scene-btn ${currentScene === scene2Name ? 'active' : ''}`}
+                  onClick={() => switchScene(scene2Name)}
+                >
+                  {scene2Name}
+                </button>
+              </div>
+            </div>
+
             <div className="sound-switch">
               <div className="scene-label">Звук:</div>
               <div className="scene-toggle">
