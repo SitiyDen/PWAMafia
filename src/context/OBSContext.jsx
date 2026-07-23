@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
+import { sha256 } from '../utils/sha256';
 
 const OBSContext = createContext();
 
@@ -31,7 +32,6 @@ export function OBSProvider({ children }) {
     if (identifiedRef.current) {
       requestMuteState(sourceName);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sourceName]);
 
   useEffect(() => {
@@ -161,15 +161,15 @@ export function OBSProvider({ children }) {
     identifiedRef.current = false;
   }
 
-  async function generateAuth(password, salt, challenge) {
+  function generateAuth(password, salt, challenge) {
     const encoder = new TextEncoder();
 
-    const secret = await crypto.subtle.digest('SHA-256', encoder.encode(password + salt));
-    const secretBase64 = btoa(String.fromCharCode(...new Uint8Array(secret)));
+    const secret = sha256(encoder.encode(password + salt));
+    const secretBase64 = btoa(String.fromCharCode(...secret));
 
-    const auth = await crypto.subtle.digest('SHA-256', encoder.encode(secretBase64 + challenge));
+    const auth = sha256(encoder.encode(secretBase64 + challenge));
 
-    return btoa(String.fromCharCode(...new Uint8Array(auth)));
+    return btoa(String.fromCharCode(...auth));
   }
 
   function toggleMute() {
